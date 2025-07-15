@@ -1,0 +1,991 @@
+{
+  "paragraphs": [
+    {
+      "text": "%md\r\n## PROYECTO FINAL PA\r\n\r\nALEX SANCHEZ\r\n\r\nBRYAM JIMENEZ\r\n\r\n\r\nCSV  de Registros Estadísticos de Nacidos Vivos y Defunciones Fetales",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-15 01:50:25.363",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003ePROYECTO FINAL PA\u003c/h2\u003e\n\u003cp\u003eALEX SANCHEZ\u003c/p\u003e\n\u003cp\u003eBRYAM JIMENEZ\u003c/p\u003e\n\u003cp\u003eCSV  de Registros Estadísticos de Nacidos Vivos y Defunciones Fetales\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752543941011_27996118",
+      "id": "paragraph_1752088564211_1846190172",
+      "dateCreated": "2025-07-15 01:45:41.011",
+      "dateStarted": "2025-07-15 01:50:25.363",
+      "dateFinished": "2025-07-15 01:50:27.870",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%md\n## CARGA DE DATOS \n\nLECTURA DE DATOS DE Csv ENV_2023.csv",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-15 01:45:41.012",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eCARGA DE DATOS\u003c/h2\u003e\n\u003cp\u003eLECTURA DE DATOS DE Csv ENV_2023.csv\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752543941012_1090006719",
+      "id": "paragraph_1752088931405_1186899587",
+      "dateCreated": "2025-07-15 01:45:41.012",
+      "status": "READY"
+    },
+    {
+      "text": "val dfNacidos \u003d spark\n    .read\n    .option(\"header\", true)\n    .option(\"sep\", \";\")\n    .option(\"inferSchema\", true)\n    .csv(\"/workspace/Proyecto_Bimestral_JimLeo/ENV_2023.csv\")",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-15 01:49:59.334",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionSupport": true,
+          "completionKey": "TAB"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mdfNacidos\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m \u003d [prov_insc: string, cant_insc: string ... 45 more fields]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d0"
+            },
+            {
+              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d1"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752543941012_1889884383",
+      "id": "paragraph_1752089043726_568972041",
+      "dateCreated": "2025-07-15 01:45:41.012",
+      "dateStarted": "2025-07-15 01:49:59.338",
+      "dateFinished": "2025-07-15 01:50:18.356",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%md\r\nCONTAR CANTIDAD DE COLUMNAS Y FILAS DEL CSV",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-15 01:45:41.012",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003eCONTAR CANTIDAD DE COLUMNAS Y FILAS DEL CSV\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752543941012_1663121383",
+      "id": "paragraph_1752089070438_1074808553",
+      "dateCreated": "2025-07-15 01:45:41.012",
+      "status": "READY"
+    },
+    {
+      "text": "print(s\"Registros (filas): ${dfNacidos.count}, Variables (columnas): ${dfNacidos.columns.length}\")\n",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-15 01:45:41.013",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionSupport": true,
+          "completionKey": "TAB"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Registros (filas): 241295, Variables (columnas): 47"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752543941012_426284356",
+      "id": "paragraph_1752089145536_22668906",
+      "dateCreated": "2025-07-15 01:45:41.013",
+      "status": "READY"
+    },
+    {
+      "text": "%md\r\n**MOSTRAR EL ESQUEMA DE DE DataFrame dfNacidos**\r\n\r\nMuestra el nombre de cada columna, su tipo de dato (por ejemplo StringType, IntegerType, TimestampType, etc.)\r\ny si permite valores nulos (nullable \u003d true o false).",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-15 01:45:41.013",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003e\u003cstrong\u003eMOSTRAR EL ESQUEMA DE DE DataFrame dfNacidos\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eMuestra el nombre de cada columna, su tipo de dato (por ejemplo StringType, IntegerType, TimestampType, etc.)\u003cbr /\u003e\ny si permite valores nulos (nullable \u003d true o false).\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752543941013_1316631140",
+      "id": "paragraph_1752089368534_1693585539",
+      "dateCreated": "2025-07-15 01:45:41.013",
+      "status": "READY"
+    },
+    {
+      "text": "dfNacidos.printSchema",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-15 01:45:41.013",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "root\n |-- prov_insc: string (nullable \u003d true)\n |-- cant_insc: string (nullable \u003d true)\n |-- parr_insc: string (nullable \u003d true)\n |-- fecha_insc: string (nullable \u003d true)\n |-- anio_insc: string (nullable \u003d true)\n |-- mes_insc: string (nullable \u003d true)\n |-- dia_insc: string (nullable \u003d true)\n |-- sexo: string (nullable \u003d true)\n |-- fecha_nac: string (nullable \u003d true)\n |-- anio_nac: integer (nullable \u003d true)\n |-- mes_nac: string (nullable \u003d true)\n |-- dia_nac: integer (nullable \u003d true)\n |-- talla: string (nullable \u003d true)\n |-- peso: string (nullable \u003d true)\n |-- sem_gest: string (nullable \u003d true)\n |-- tipo_part: string (nullable \u003d true)\n |-- lugar_ocur: string (nullable \u003d true)\n |-- apgar1: string (nullable \u003d true)\n |-- apgar5: string (nullable \u003d true)\n |-- p_emb: string (nullable \u003d true)\n |-- prov_nac: string (nullable \u003d true)\n |-- cant_nac: string (nullable \u003d true)\n |-- parr_nac: string (nullable \u003d true)\n |-- area_nac: string (nullable \u003d true)\n |-- asis_por: string (nullable \u003d true)\n |-- nac_mad: string (nullable \u003d true)\n |-- cod_pais: string (nullable \u003d true)\n |-- fecha_mad: string (nullable \u003d true)\n |-- anio_mad: string (nullable \u003d true)\n |-- mes_mad: string (nullable \u003d true)\n |-- dia_mad: string (nullable \u003d true)\n |-- edad_mad: string (nullable \u003d true)\n |-- con_pren: string (nullable \u003d true)\n |-- num_emb: string (nullable \u003d true)\n |-- num_par: string (nullable \u003d true)\n |-- hij_viv: integer (nullable \u003d true)\n |-- hij_vivm: string (nullable \u003d true)\n |-- hij_nacm: string (nullable \u003d true)\n |-- etnia: string (nullable \u003d true)\n |-- est_civil: string (nullable \u003d true)\n |-- niv_inst: string (nullable \u003d true)\n |-- sabe_leer: string (nullable \u003d true)\n |-- prov_res: string (nullable \u003d true)\n |-- cant_res: string (nullable \u003d true)\n |-- parr_res: string (nullable \u003d true)\n |-- area_res: string (nullable \u003d true)\n |-- residente: string (nullable \u003d true)\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752543941013_2058287808",
+      "id": "paragraph_1752089249454_406865264",
+      "dateCreated": "2025-07-15 01:45:41.013",
+      "status": "READY"
+    },
+    {
+      "text": "%md\r\n**USO DE describe para Calcula estadísticas descriptivas de las columnas seleccionadas**\r\n**count:** cuántos valores no nulos hay                              \r\n**mean:** promedio (solo para numéricas)\r\n**stddev:** desviación estándar (solo para numéricas)                \r\n**min:** valor mínimo\r\n**max:** valor máximo",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-15 01:45:41.013",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003e\u003cstrong\u003eUSO DE describe para Calcula estadísticas descriptivas de las columnas seleccionadas\u003c/strong\u003e\u003cbr /\u003e\n\u003cstrong\u003ecount:\u003c/strong\u003e cuántos valores no nulos hay\u003cbr /\u003e\n\u003cstrong\u003emean:\u003c/strong\u003e promedio (solo para numéricas)\u003cbr /\u003e\n\u003cstrong\u003estddev:\u003c/strong\u003e desviación estándar (solo para numéricas)\u003cbr /\u003e\n\u003cstrong\u003emin:\u003c/strong\u003e valor mínimo\u003cbr /\u003e\n\u003cstrong\u003emax:\u003c/strong\u003e valor máximo\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752543941013_1169661469",
+      "id": "paragraph_1752089812171_351039653",
+      "dateCreated": "2025-07-15 01:45:41.013",
+      "status": "READY"
+    },
+    {
+      "text": "dfNacidos\r\n    .select(\"anio_insc\", \"dia_insc\", \"anio_nac\", \"dia_nac\")\r\n    .describe()\r\n    .show",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-15 01:45:41.013",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------+------------------+------------------+------------------+------------------+\n|summary|         anio_insc|          dia_insc|          anio_nac|           dia_nac|\n+-------+------------------+------------------+------------------+------------------+\n|  count|            241295|            241295|            241295|            241295|\n|   mean|2023.0647378454437|15.856224576692474|2022.9372345054808|15.632362875318593|\n| stddev|0.6836599754432079| 8.685787511632697|1.5180530471163742| 8.784520746500172|\n|    min|                  |                  |              1900|                 1|\n|    max|              2024|                 9|              2023|                31|\n+-------+------------------+------------------+------------------+------------------+\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752543941013_1067165924",
+      "id": "paragraph_1752089286120_478739836",
+      "dateCreated": "2025-07-15 01:45:41.013",
+      "status": "READY"
+    },
+    {
+      "text": "%md\r\n**IDENTIFICAR LAS COLUMNAS DE TIPO ENTERO DEL DATAFREME**\r\n\r\ny calcular un resumen estadístico básico ",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-15 01:45:41.013",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003e\u003cstrong\u003eIDENTIFICAR LAS COLUMNAS DE TIPO ENTERO DEL DATAFREME\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003ey calcular un resumen estadístico básico\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752543941013_462799323",
+      "id": "paragraph_1752090363196_393657003",
+      "dateCreated": "2025-07-15 01:45:41.013",
+      "status": "READY"
+    },
+    {
+      "text": "import org.apache.spark.sql.types._\r\n\r\nval numericCols \u003d dfNacidos.schema.fields.filter{\r\n  case StructField(_, IntegerType | LongType | FloatType | DoubleType | ShortType | DecimalType(), _, _) \u003d\u003e true\r\n  case _ \u003d\u003e false\r\n}.map(_.name)\r\n\r\ndfNacidos.select(numericCols.map(col) : _*).describe().show",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-15 01:45:41.014",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------+------------------+------------------+------------------+\n|summary|          anio_nac|           dia_nac|           hij_viv|\n+-------+------------------+------------------+------------------+\n|  count|            241295|            241295|            241295|\n|   mean|2022.9372345054808|15.632362875318593|2.0577550301498166|\n| stddev|1.5180530471163742| 8.784520746500172|1.2242374055754184|\n|    min|              1900|                 1|                 1|\n|    max|              2023|                31|                16|\n+-------+------------------+------------------+------------------+\n\nimport org.apache.spark.sql.types._\n\u001b[1m\u001b[34mnumericCols\u001b[0m: \u001b[1m\u001b[32mArray[String]\u001b[0m \u003d Array(anio_nac, dia_nac, hij_viv)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752543941013_1344963356",
+      "id": "paragraph_1752089471820_892259520",
+      "dateCreated": "2025-07-15 01:45:41.014",
+      "status": "READY"
+    },
+    {
+      "text": "%md\r\n**Calcula un resumen estadístico mas ampliado con summary**\r\nEn el summary incluye cuartiles",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-15 01:45:41.014",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003e\u003cstrong\u003eCalcula un resumen estadístico mas ampliado con summary\u003c/strong\u003e\u003cbr /\u003e\nEn el summary incluye cuartiles\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752543941014_2138644921",
+      "id": "paragraph_1752090056694_1216663558",
+      "dateCreated": "2025-07-15 01:45:41.014",
+      "status": "READY"
+    },
+    {
+      "text": "dfNacidos.select(numericCols.map(col): _*).summary().show //ssumary permite mostrar cuartiles",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-15 01:45:41.014",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionSupport": true,
+          "completionKey": "TAB"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------+------------------+------------------+------------------+\n|summary|          anio_nac|           dia_nac|           hij_viv|\n+-------+------------------+------------------+------------------+\n|  count|            241295|            241295|            241295|\n|   mean|2022.9372345054808|15.632362875318593|2.0577550301498166|\n| stddev|1.5180530471163742| 8.784520746500172|1.2242374055754184|\n|    min|              1900|                 1|                 1|\n|    25%|              2023|                 8|                 1|\n|    50%|              2023|                16|                 2|\n|    75%|              2023|                23|                 3|\n|    max|              2023|                31|                16|\n+-------+------------------+------------------+------------------+\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752543941014_1966645189",
+      "id": "paragraph_1752090779178_1192134529",
+      "dateCreated": "2025-07-15 01:45:41.014",
+      "status": "READY"
+    },
+    {
+      "text": "%md**DANDOLE A SUMMARY LAS ESTADITICAS QUE QUEREMOS VER**",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-15 01:45:41.014",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003e\u003cstrong\u003eDANDOLE A SUMMARY LAS ESTADITICAS QUE QUEREMOS VER\u003c/strong\u003e\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752543941014_885236827",
+      "id": "paragraph_1752090806252_1558490133",
+      "dateCreated": "2025-07-15 01:45:41.014",
+      "status": "READY"
+    },
+    {
+      "text": "dfNacidos.select(numericCols.map(col): _*).summary(\"stddev\", \"25%\").show",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-15 01:45:41.014",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionSupport": true,
+          "completionKey": "TAB"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------+------------------+-----------------+------------------+\n|summary|          anio_nac|          dia_nac|           hij_viv|\n+-------+------------------+-----------------+------------------+\n| stddev|1.5180530471163742|8.784520746500172|1.2242374055754184|\n|    25%|              2023|                8|                 1|\n+-------+------------------+-----------------+------------------+\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752543941014_1011630334",
+      "id": "paragraph_1752091401245_1744613614",
+      "dateCreated": "2025-07-15 01:45:41.014",
+      "status": "READY"
+    },
+    {
+      "text": "dfNacidos.select(numericCols.map(col): _*).summary(\"count\", \"count_distinct\").show",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-15 01:45:41.014",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+--------------+--------+-------+-------+\n|       summary|anio_nac|dia_nac|hij_viv|\n+--------------+--------+-------+-------+\n|         count|  241295| 241295| 241295|\n|count_distinct|      41|     31|     15|\n+--------------+--------+-------+-------+\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752543941014_2096404813",
+      "id": "paragraph_1752091418038_1862225677",
+      "dateCreated": "2025-07-15 01:45:41.014",
+      "status": "READY"
+    },
+    {
+      "text": "%md\r\n## TRANSFORMACIONES ",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-15 01:45:41.014",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eTRANSFORMACIONES\u003c/h2\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752543941014_548904852",
+      "id": "paragraph_1752091438655_1897410838",
+      "dateCreated": "2025-07-15 01:45:41.014",
+      "status": "READY"
+    },
+    {
+      "text": "%md\nTranformamos el tipo de dato de la columna fecha_insc que era string a tipo date ",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-15 01:45:41.015",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003eTranformamos el tipo de dato de la columna fecha_insc que era string a tipo date\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752543941015_316940899",
+      "id": "paragraph_1752092226856_304717931",
+      "dateCreated": "2025-07-15 01:45:41.015",
+      "status": "READY"
+    },
+    {
+      "text": "val dfNacidosClean \u003d dfNacidos\n    .withColumn(\"fecha_insc_date\", to_date(col(\"fecha_insc\"), \"yyyy/MM/dd\"))\n",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-15 01:45:41.015",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionSupport": true,
+          "completionKey": "TAB"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mdfNacidosClean\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m \u003d [prov_insc: string, cant_insc: string ... 46 more fields]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752543941015_1280483432",
+      "id": "paragraph_1752091812882_714593201",
+      "dateCreated": "2025-07-15 01:45:41.015",
+      "status": "READY"
+    },
+    {
+      "text": "dfNacidosClean.printSchema",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-15 01:45:41.015",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "root\n |-- prov_insc: string (nullable \u003d true)\n |-- cant_insc: string (nullable \u003d true)\n |-- parr_insc: string (nullable \u003d true)\n |-- fecha_insc: string (nullable \u003d true)\n |-- anio_insc: string (nullable \u003d true)\n |-- mes_insc: string (nullable \u003d true)\n |-- dia_insc: string (nullable \u003d true)\n |-- sexo: string (nullable \u003d true)\n |-- fecha_nac: string (nullable \u003d true)\n |-- anio_nac: integer (nullable \u003d true)\n |-- mes_nac: string (nullable \u003d true)\n |-- dia_nac: integer (nullable \u003d true)\n |-- talla: string (nullable \u003d true)\n |-- peso: string (nullable \u003d true)\n |-- sem_gest: string (nullable \u003d true)\n |-- tipo_part: string (nullable \u003d true)\n |-- lugar_ocur: string (nullable \u003d true)\n |-- apgar1: string (nullable \u003d true)\n |-- apgar5: string (nullable \u003d true)\n |-- p_emb: string (nullable \u003d true)\n |-- prov_nac: string (nullable \u003d true)\n |-- cant_nac: string (nullable \u003d true)\n |-- parr_nac: string (nullable \u003d true)\n |-- area_nac: string (nullable \u003d true)\n |-- asis_por: string (nullable \u003d true)\n |-- nac_mad: string (nullable \u003d true)\n |-- cod_pais: string (nullable \u003d true)\n |-- fecha_mad: string (nullable \u003d true)\n |-- anio_mad: string (nullable \u003d true)\n |-- mes_mad: string (nullable \u003d true)\n |-- dia_mad: string (nullable \u003d true)\n |-- edad_mad: string (nullable \u003d true)\n |-- con_pren: string (nullable \u003d true)\n |-- num_emb: string (nullable \u003d true)\n |-- num_par: string (nullable \u003d true)\n |-- hij_viv: integer (nullable \u003d true)\n |-- hij_vivm: string (nullable \u003d true)\n |-- hij_nacm: string (nullable \u003d true)\n |-- etnia: string (nullable \u003d true)\n |-- est_civil: string (nullable \u003d true)\n |-- niv_inst: string (nullable \u003d true)\n |-- sabe_leer: string (nullable \u003d true)\n |-- prov_res: string (nullable \u003d true)\n |-- cant_res: string (nullable \u003d true)\n |-- parr_res: string (nullable \u003d true)\n |-- area_res: string (nullable \u003d true)\n |-- residente: string (nullable \u003d true)\n |-- fecha_insc_date: date (nullable \u003d true)\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752543941015_531892151",
+      "id": "paragraph_1752091913121_1962615345",
+      "dateCreated": "2025-07-15 01:45:41.015",
+      "status": "READY"
+    },
+    {
+      "text": "%md\r\n**análisis estadístico de todas las columnas de tipo fecha**\r\nIdentificación automática de columnas de tipo fecha\r\neneración de expresiones estadísticas para cada columna de fecha\r\n",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-15 01:45:41.015",
+      "progress": 0,
+      "config": {
+        "tableHide": true,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": false,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003e\u003cstrong\u003eanálisis estadístico de todas las columnas de tipo fecha\u003c/strong\u003e\u003cbr /\u003e\nIdentificación automática de columnas de tipo fecha\u003cbr /\u003e\neneración de expresiones estadísticas para cada columna de fecha\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752543941015_213468722",
+      "id": "paragraph_1752092825178_985743362",
+      "dateCreated": "2025-07-15 01:45:41.015",
+      "status": "READY"
+    },
+    {
+      "text": "import org.apache.spark.sql.types._\r\nimport org.apache.spark.sql.functions._\r\n\r\n\r\n\r\nval dateColumnNames \u003d dfNacidosClean\r\n    .schema\r\n    .fields\r\n    .filter {\r\n        case StructField(_, TimestampType | DateType,_,_)\u003d\u003e true\r\n        case _ \u003d\u003e false\r\n    }\r\n    .map(_.name)\r\n\r\n// ejemplo \r\n//Generación de expresiones estadísticas para cada columna de fecha\r\nval statsExprs \u003d dateColumnNames\r\n    .flatMap {colName \u003d\u003e\r\n        Seq(\r\n            count(col(colName)).alias(s\"${colName}_count\"),\r\n            min(col(colName)).alias(s\"${colName}_min\"),\r\n            max(col(colName)).alias(s\"${colName}_max\"),\r\n            countDistinct(col(colName)).alias(s\"${colName}_countDistinct\")\r\n        )\r\n    }    \r\n\r\nval dfStatsDateCols \u003d dfNacidosClean\r\n    .select(statsExprs: _*)\r\n\r\ndfStatsDateCols.show()",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-15 01:45:41.015",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+---------------------+-------------------+-------------------+-----------------------------+\n|fecha_insc_date_count|fecha_insc_date_min|fecha_insc_date_max|fecha_insc_date_countDistinct|\n+---------------------+-------------------+-------------------+-----------------------------+\n|               231333|         2001-01-01|         2024-04-30|                          452|\n+---------------------+-------------------+-------------------+-----------------------------+\n\nimport org.apache.spark.sql.types._\nimport org.apache.spark.sql.functions._\n\u001b[1m\u001b[34mdateColumnNames\u001b[0m: \u001b[1m\u001b[32mArray[String]\u001b[0m \u003d Array(fecha_insc_date)\n\u001b[1m\u001b[34mstatsExprs\u001b[0m: \u001b[1m\u001b[32mArray[org.apache.spark.sql.Column]\u001b[0m \u003d Array(count(fecha_insc_date) AS fecha_insc_date_count, min(fecha_insc_date) AS fecha_insc_date_min, max(fecha_insc_date) AS fecha_insc_date_max, count(fecha_insc_date) AS fecha_insc_date_countDistinct)\n\u001b[1m\u001b[34mdfStatsDateCols\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m \u003d [fecha_insc_date_count: bigint, fecha_insc_date_min: date ... 2 more fields]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752543941015_1504454316",
+      "id": "paragraph_1752092501859_1681624445",
+      "dateCreated": "2025-07-15 01:45:41.015",
+      "status": "READY"
+    },
+    {
+      "text": "%md\r\n\r\n**Calcular medidas estadísticas para la columna anio_nac del DataFrame dfNacidos**",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-15 01:45:41.015",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003e\u003cstrong\u003eCalcular medidas estadísticas para la columna anio_nac del DataFrame dfNacidos\u003c/strong\u003e\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752543941015_1159006601",
+      "id": "paragraph_1752092821310_702208958",
+      "dateCreated": "2025-07-15 01:45:41.015",
+      "status": "READY"
+    },
+    {
+      "text": "dfNacidos.select(\n    mode($\"anio_nac\"),\n    median($\"anio_nac\"),\n    stddev($\"anio_nac\"),\n    stddev_pop($\"anio_nac\"),   // divide N\n    stddev_samp($\"anio_nac\")   // divide N\n)\n.show",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-15 01:45:41.016",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionSupport": true,
+          "completionKey": "TAB"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+--------------+----------------+---------------------+--------------------+---------------------+\n|mode(anio_nac)|median(anio_nac)|stddev_samp(anio_nac)|stddev_pop(anio_nac)|stddev_samp(anio_nac)|\n+--------------+----------------+---------------------+--------------------+---------------------+\n|          2023|          2023.0|   1.5180530471163742|  1.5180499014759343|   1.5180530471163742|\n+--------------+----------------+---------------------+--------------------+---------------------+\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752543941016_876451831",
+      "id": "paragraph_1752093340802_622024639",
+      "dateCreated": "2025-07-15 01:45:41.016",
+      "status": "READY"
+    },
+    {
+      "text": "",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-15 01:45:41.016",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752543941016_824637422",
+      "id": "paragraph_1752093369418_1613315767",
+      "dateCreated": "2025-07-15 01:45:41.016",
+      "status": "READY"
+    }
+  ],
+  "name": "PRO_final",
+  "id": "2KZ1U3X52",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.12.0",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false
+  },
+  "info": {}
+}
