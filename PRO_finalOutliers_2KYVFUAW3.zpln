@@ -1,0 +1,2723 @@
+{
+  "paragraphs": [
+    {
+      "text": "",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:16:21.944",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308973_1816004790",
+      "id": "paragraph_1752606643222_329973673",
+      "dateCreated": "2025-07-17 18:01:48.973",
+      "status": "READY"
+    },
+    {
+      "text": "%md\r\n## PROYECTO FINAL PA\r\n\r\nALEX SANCHEZ\r\n\r\nBRYAM JIMENEZ\r\n\r\n\r\nCSV  de Registros Estadísticos de Nacidos Vivos y Defunciones Fetales",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.974",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003ePROYECTO FINAL PA\u003c/h2\u003e\n\u003cp\u003eALEX SANCHEZ\u003c/p\u003e\n\u003cp\u003eBRYAM JIMENEZ\u003c/p\u003e\n\u003cp\u003eCSV  de Registros Estadísticos de Nacidos Vivos y Defunciones Fetales\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308974_1373262693",
+      "id": "paragraph_1752088564211_1846190172",
+      "dateCreated": "2025-07-17 18:01:48.974",
+      "status": "READY"
+    },
+    {
+      "text": "%md\n## CARGA DE DATOS \n\nLECTURA DE DATOS DE Csv ENV_2023.csv",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.974",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eCARGA DE DATOS\u003c/h2\u003e\n\u003cp\u003eLECTURA DE DATOS DE Csv ENV_2023.csv\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308974_1098004529",
+      "id": "paragraph_1752088931405_1186899587",
+      "dateCreated": "2025-07-17 18:01:48.974",
+      "status": "READY"
+    },
+    {
+      "text": "val dfNacidos \u003d spark\n    .read\n    .option(\"header\", true)\n    .option(\"sep\", \";\")\n    .option(\"inferSchema\", true)\n    .csv(\"/workspace/Proyecto_Bimestral_JimLeo/ENV_2023.csv\")",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.975",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionSupport": true,
+          "completionKey": "TAB"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mdfNacidos\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m \u003d [prov_insc: string, cant_insc: string ... 45 more fields]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308974_1581611648",
+      "id": "paragraph_1752089043726_568972041",
+      "dateCreated": "2025-07-17 18:01:48.975",
+      "status": "READY"
+    },
+    {
+      "text": "%md\r\nCONTAR CANTIDAD DE COLUMNAS Y FILAS DEL CSV",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.975",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003eCONTAR CANTIDAD DE COLUMNAS Y FILAS DEL CSV\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308975_508988347",
+      "id": "paragraph_1752089070438_1074808553",
+      "dateCreated": "2025-07-17 18:01:48.975",
+      "status": "READY"
+    },
+    {
+      "text": "print(s\"Registros (filas): ${dfNacidos.count}, Variables (columnas): ${dfNacidos.columns.length}\")\n",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.975",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionSupport": true,
+          "completionKey": "TAB"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Registros (filas): 241295, Variables (columnas): 47"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308975_1975906784",
+      "id": "paragraph_1752089145536_22668906",
+      "dateCreated": "2025-07-17 18:01:48.975",
+      "status": "READY"
+    },
+    {
+      "text": "%md\r\n**MOSTRAR EL ESQUEMA DE DE DataFrame dfNacidos**\r\n\r\nMuestra el nombre de cada columna, su tipo de dato (por ejemplo StringType, IntegerType, TimestampType, etc.)\r\ny si permite valores nulos (nullable \u003d true o false).",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.975",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003e\u003cstrong\u003eMOSTRAR EL ESQUEMA DE DE DataFrame dfNacidos\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eMuestra el nombre de cada columna, su tipo de dato (por ejemplo StringType, IntegerType, TimestampType, etc.)\u003cbr /\u003e\ny si permite valores nulos (nullable \u003d true o false).\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308975_1099390607",
+      "id": "paragraph_1752089368534_1693585539",
+      "dateCreated": "2025-07-17 18:01:48.975",
+      "status": "READY"
+    },
+    {
+      "text": "dfNacidos.printSchema",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.975",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "root\n |-- prov_insc: string (nullable \u003d true)\n |-- cant_insc: string (nullable \u003d true)\n |-- parr_insc: string (nullable \u003d true)\n |-- fecha_insc: string (nullable \u003d true)\n |-- anio_insc: string (nullable \u003d true)\n |-- mes_insc: string (nullable \u003d true)\n |-- dia_insc: string (nullable \u003d true)\n |-- sexo: string (nullable \u003d true)\n |-- fecha_nac: string (nullable \u003d true)\n |-- anio_nac: integer (nullable \u003d true)\n |-- mes_nac: string (nullable \u003d true)\n |-- dia_nac: integer (nullable \u003d true)\n |-- talla: string (nullable \u003d true)\n |-- peso: string (nullable \u003d true)\n |-- sem_gest: string (nullable \u003d true)\n |-- tipo_part: string (nullable \u003d true)\n |-- lugar_ocur: string (nullable \u003d true)\n |-- apgar1: string (nullable \u003d true)\n |-- apgar5: string (nullable \u003d true)\n |-- p_emb: string (nullable \u003d true)\n |-- prov_nac: string (nullable \u003d true)\n |-- cant_nac: string (nullable \u003d true)\n |-- parr_nac: string (nullable \u003d true)\n |-- area_nac: string (nullable \u003d true)\n |-- asis_por: string (nullable \u003d true)\n |-- nac_mad: string (nullable \u003d true)\n |-- cod_pais: string (nullable \u003d true)\n |-- fecha_mad: string (nullable \u003d true)\n |-- anio_mad: string (nullable \u003d true)\n |-- mes_mad: string (nullable \u003d true)\n |-- dia_mad: string (nullable \u003d true)\n |-- edad_mad: string (nullable \u003d true)\n |-- con_pren: string (nullable \u003d true)\n |-- num_emb: string (nullable \u003d true)\n |-- num_par: string (nullable \u003d true)\n |-- hij_viv: integer (nullable \u003d true)\n |-- hij_vivm: string (nullable \u003d true)\n |-- hij_nacm: string (nullable \u003d true)\n |-- etnia: string (nullable \u003d true)\n |-- est_civil: string (nullable \u003d true)\n |-- niv_inst: string (nullable \u003d true)\n |-- sabe_leer: string (nullable \u003d true)\n |-- prov_res: string (nullable \u003d true)\n |-- cant_res: string (nullable \u003d true)\n |-- parr_res: string (nullable \u003d true)\n |-- area_res: string (nullable \u003d true)\n |-- residente: string (nullable \u003d true)\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308975_737295579",
+      "id": "paragraph_1752089249454_406865264",
+      "dateCreated": "2025-07-17 18:01:48.975",
+      "status": "READY"
+    },
+    {
+      "text": "%md\r\n**USO DE describe para Calcula estadísticas descriptivas de las columnas seleccionadas**\r\n**count:** cuántos valores no nulos hay                              \r\n**mean:** promedio (solo para numéricas)\r\n**stddev:** desviación estándar (solo para numéricas)                \r\n**min:** valor mínimo\r\n**max:** valor máximo",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.975",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003e\u003cstrong\u003eUSO DE describe para Calcula estadísticas descriptivas de las columnas seleccionadas\u003c/strong\u003e\u003cbr /\u003e\n\u003cstrong\u003ecount:\u003c/strong\u003e cuántos valores no nulos hay\u003cbr /\u003e\n\u003cstrong\u003emean:\u003c/strong\u003e promedio (solo para numéricas)\u003cbr /\u003e\n\u003cstrong\u003estddev:\u003c/strong\u003e desviación estándar (solo para numéricas)\u003cbr /\u003e\n\u003cstrong\u003emin:\u003c/strong\u003e valor mínimo\u003cbr /\u003e\n\u003cstrong\u003emax:\u003c/strong\u003e valor máximo\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308975_2070403283",
+      "id": "paragraph_1752089812171_351039653",
+      "dateCreated": "2025-07-17 18:01:48.975",
+      "status": "READY"
+    },
+    {
+      "text": "dfNacidos\r\n    .select(\"anio_insc\", \"dia_insc\", \"anio_nac\", \"dia_nac\")\r\n    .describe()\r\n    .show",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.975",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------+------------------+------------------+------------------+------------------+\n|summary|         anio_insc|          dia_insc|          anio_nac|           dia_nac|\n+-------+------------------+------------------+------------------+------------------+\n|  count|            241295|            241295|            241295|            241295|\n|   mean|2023.0647378454437|15.856224576692474|2022.9372345054808|15.632362875318593|\n| stddev|0.6836599754432079| 8.685787511632697|1.5180530471163742| 8.784520746500172|\n|    min|                  |                  |              1900|                 1|\n|    max|              2024|                 9|              2023|                31|\n+-------+------------------+------------------+------------------+------------------+\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308975_1494427847",
+      "id": "paragraph_1752089286120_478739836",
+      "dateCreated": "2025-07-17 18:01:48.975",
+      "status": "READY"
+    },
+    {
+      "text": "%md\r\n**IDENTIFICAR LAS COLUMNAS DE TIPO ENTERO DEL DATAFREME**\r\n\r\ny calcular un resumen estadístico básico ",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.975",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003e\u003cstrong\u003eIDENTIFICAR LAS COLUMNAS DE TIPO ENTERO DEL DATAFREME\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003ey calcular un resumen estadístico básico\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308975_621197011",
+      "id": "paragraph_1752090363196_393657003",
+      "dateCreated": "2025-07-17 18:01:48.975",
+      "status": "READY"
+    },
+    {
+      "text": "import org.apache.spark.sql.types._\r\n\r\nval numericCols \u003d dfNacidos.schema.fields.filter{\r\n  case StructField(_, IntegerType | LongType | FloatType | DoubleType | ShortType | DecimalType(), _, _) \u003d\u003e true\r\n  case _ \u003d\u003e false\r\n}.map(_.name)\r\n\r\ndfNacidos.select(numericCols.map(col) : _*).describe().show",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.975",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------+------------------+------------------+------------------+\n|summary|          anio_nac|           dia_nac|           hij_viv|\n+-------+------------------+------------------+------------------+\n|  count|            241295|            241295|            241295|\n|   mean|2022.9372345054808|15.632362875318593|2.0577550301498166|\n| stddev|1.5180530471163742| 8.784520746500172|1.2242374055754184|\n|    min|              1900|                 1|                 1|\n|    max|              2023|                31|                16|\n+-------+------------------+------------------+------------------+\n\nimport org.apache.spark.sql.types._\n\u001b[1m\u001b[34mnumericCols\u001b[0m: \u001b[1m\u001b[32mArray[String]\u001b[0m \u003d Array(anio_nac, dia_nac, hij_viv)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308975_1321252647",
+      "id": "paragraph_1752089471820_892259520",
+      "dateCreated": "2025-07-17 18:01:48.975",
+      "status": "READY"
+    },
+    {
+      "text": "%md\r\n**Calcula un resumen estadístico mas ampliado con summary**\r\nEn el summary incluye cuartiles",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.976",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003e\u003cstrong\u003eCalcula un resumen estadístico mas ampliado con summary\u003c/strong\u003e\u003cbr /\u003e\nEn el summary incluye cuartiles\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308976_521388590",
+      "id": "paragraph_1752090056694_1216663558",
+      "dateCreated": "2025-07-17 18:01:48.976",
+      "status": "READY"
+    },
+    {
+      "text": "dfNacidos.select(numericCols.map(col): _*).summary().show //ssumary permite mostrar cuartiles",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.976",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionSupport": true,
+          "completionKey": "TAB"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------+------------------+------------------+------------------+\n|summary|          anio_nac|           dia_nac|           hij_viv|\n+-------+------------------+------------------+------------------+\n|  count|            241295|            241295|            241295|\n|   mean|2022.9372345054808|15.632362875318593|2.0577550301498166|\n| stddev|1.5180530471163742| 8.784520746500172|1.2242374055754184|\n|    min|              1900|                 1|                 1|\n|    25%|              2023|                 8|                 1|\n|    50%|              2023|                16|                 2|\n|    75%|              2023|                23|                 3|\n|    max|              2023|                31|                16|\n+-------+------------------+------------------+------------------+\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308976_687938479",
+      "id": "paragraph_1752090779178_1192134529",
+      "dateCreated": "2025-07-17 18:01:48.976",
+      "status": "READY"
+    },
+    {
+      "text": "%md**DANDOLE A SUMMARY LAS ESTADITICAS QUE QUEREMOS VER**",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.976",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003e\u003cstrong\u003eDANDOLE A SUMMARY LAS ESTADITICAS QUE QUEREMOS VER\u003c/strong\u003e\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308976_1083449146",
+      "id": "paragraph_1752090806252_1558490133",
+      "dateCreated": "2025-07-17 18:01:48.976",
+      "status": "READY"
+    },
+    {
+      "text": "dfNacidos.select(numericCols.map(col): _*).summary(\"stddev\", \"25%\").show",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.976",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionSupport": true,
+          "completionKey": "TAB"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------+------------------+-----------------+------------------+\n|summary|          anio_nac|          dia_nac|           hij_viv|\n+-------+------------------+-----------------+------------------+\n| stddev|1.5180530471163742|8.784520746500172|1.2242374055754184|\n|    25%|              2023|                8|                 1|\n+-------+------------------+-----------------+------------------+\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308976_1851087611",
+      "id": "paragraph_1752091401245_1744613614",
+      "dateCreated": "2025-07-17 18:01:48.976",
+      "status": "READY"
+    },
+    {
+      "text": "dfNacidos.select(numericCols.map(col): _*).summary(\"count\", \"count_distinct\").show",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.976",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+--------------+--------+-------+-------+\n|       summary|anio_nac|dia_nac|hij_viv|\n+--------------+--------+-------+-------+\n|         count|  241295| 241295| 241295|\n|count_distinct|      41|     31|     15|\n+--------------+--------+-------+-------+\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308976_2099421886",
+      "id": "paragraph_1752091418038_1862225677",
+      "dateCreated": "2025-07-17 18:01:48.976",
+      "status": "READY"
+    },
+    {
+      "text": "%md\r\n## TRANSFORMACIONES ",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.976",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eTRANSFORMACIONES\u003c/h2\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308976_557960116",
+      "id": "paragraph_1752091438655_1897410838",
+      "dateCreated": "2025-07-17 18:01:48.976",
+      "status": "READY"
+    },
+    {
+      "text": "%md\nTranformamos el tipo de dato de la columna fecha_insc que era string a tipo date ",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.976",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003eTranformamos el tipo de dato de la columna fecha_insc que era string a tipo date\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308976_1612149754",
+      "id": "paragraph_1752092226856_304717931",
+      "dateCreated": "2025-07-17 18:01:48.976",
+      "status": "READY"
+    },
+    {
+      "text": "val dfNacidosClean \u003d dfNacidos\n    .withColumn(\"fecha_insc_date\", to_date(col(\"fecha_insc\"), \"yyyy/MM/dd\"))\n",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.976",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionSupport": true,
+          "completionKey": "TAB"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mdfNacidosClean\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m \u003d [prov_insc: string, cant_insc: string ... 46 more fields]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308976_93232012",
+      "id": "paragraph_1752091812882_714593201",
+      "dateCreated": "2025-07-17 18:01:48.976",
+      "status": "READY"
+    },
+    {
+      "text": "dfNacidosClean.printSchema",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.976",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "root\n |-- prov_insc: string (nullable \u003d true)\n |-- cant_insc: string (nullable \u003d true)\n |-- parr_insc: string (nullable \u003d true)\n |-- fecha_insc: string (nullable \u003d true)\n |-- anio_insc: string (nullable \u003d true)\n |-- mes_insc: string (nullable \u003d true)\n |-- dia_insc: string (nullable \u003d true)\n |-- sexo: string (nullable \u003d true)\n |-- fecha_nac: string (nullable \u003d true)\n |-- anio_nac: integer (nullable \u003d true)\n |-- mes_nac: string (nullable \u003d true)\n |-- dia_nac: integer (nullable \u003d true)\n |-- talla: string (nullable \u003d true)\n |-- peso: string (nullable \u003d true)\n |-- sem_gest: string (nullable \u003d true)\n |-- tipo_part: string (nullable \u003d true)\n |-- lugar_ocur: string (nullable \u003d true)\n |-- apgar1: string (nullable \u003d true)\n |-- apgar5: string (nullable \u003d true)\n |-- p_emb: string (nullable \u003d true)\n |-- prov_nac: string (nullable \u003d true)\n |-- cant_nac: string (nullable \u003d true)\n |-- parr_nac: string (nullable \u003d true)\n |-- area_nac: string (nullable \u003d true)\n |-- asis_por: string (nullable \u003d true)\n |-- nac_mad: string (nullable \u003d true)\n |-- cod_pais: string (nullable \u003d true)\n |-- fecha_mad: string (nullable \u003d true)\n |-- anio_mad: string (nullable \u003d true)\n |-- mes_mad: string (nullable \u003d true)\n |-- dia_mad: string (nullable \u003d true)\n |-- edad_mad: string (nullable \u003d true)\n |-- con_pren: string (nullable \u003d true)\n |-- num_emb: string (nullable \u003d true)\n |-- num_par: string (nullable \u003d true)\n |-- hij_viv: integer (nullable \u003d true)\n |-- hij_vivm: string (nullable \u003d true)\n |-- hij_nacm: string (nullable \u003d true)\n |-- etnia: string (nullable \u003d true)\n |-- est_civil: string (nullable \u003d true)\n |-- niv_inst: string (nullable \u003d true)\n |-- sabe_leer: string (nullable \u003d true)\n |-- prov_res: string (nullable \u003d true)\n |-- cant_res: string (nullable \u003d true)\n |-- parr_res: string (nullable \u003d true)\n |-- area_res: string (nullable \u003d true)\n |-- residente: string (nullable \u003d true)\n |-- fecha_insc_date: date (nullable \u003d true)\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308976_1035945131",
+      "id": "paragraph_1752091913121_1962615345",
+      "dateCreated": "2025-07-17 18:01:48.976",
+      "status": "READY"
+    },
+    {
+      "text": "%md\r\n**análisis estadístico de todas las columnas de tipo fecha**\r\nIdentificación automática de columnas de tipo fecha\r\neneración de expresiones estadísticas para cada columna de fecha\r\n",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.976",
+      "progress": 0,
+      "config": {
+        "tableHide": true,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": false,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003e\u003cstrong\u003eanálisis estadístico de todas las columnas de tipo fecha\u003c/strong\u003e\u003cbr /\u003e\nIdentificación automática de columnas de tipo fecha\u003cbr /\u003e\neneración de expresiones estadísticas para cada columna de fecha\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308976_1823536943",
+      "id": "paragraph_1752092825178_985743362",
+      "dateCreated": "2025-07-17 18:01:48.976",
+      "status": "READY"
+    },
+    {
+      "text": "import org.apache.spark.sql.types._\r\nimport org.apache.spark.sql.functions._\r\n\r\n\r\n\r\nval dateColumnNames \u003d dfNacidosClean\r\n    .schema\r\n    .fields\r\n    .filter {\r\n        case StructField(_, TimestampType | DateType,_,_)\u003d\u003e true\r\n        case _ \u003d\u003e false\r\n    }\r\n    .map(_.name)\r\n\r\n// ejemplo \r\n//Generación de expresiones estadísticas para cada columna de fecha\r\nval statsExprs \u003d dateColumnNames\r\n    .flatMap {colName \u003d\u003e\r\n        Seq(\r\n            count(col(colName)).alias(s\"${colName}_count\"),\r\n            min(col(colName)).alias(s\"${colName}_min\"),\r\n            max(col(colName)).alias(s\"${colName}_max\"),\r\n            countDistinct(col(colName)).alias(s\"${colName}_countDistinct\")\r\n        )\r\n    }    \r\n\r\nval dfStatsDateCols \u003d dfNacidosClean\r\n    .select(statsExprs: _*)\r\n\r\ndfStatsDateCols.show()",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.976",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+---------------------+-------------------+-------------------+-----------------------------+\n|fecha_insc_date_count|fecha_insc_date_min|fecha_insc_date_max|fecha_insc_date_countDistinct|\n+---------------------+-------------------+-------------------+-----------------------------+\n|               231333|         2001-01-01|         2024-04-30|                          452|\n+---------------------+-------------------+-------------------+-----------------------------+\n\nimport org.apache.spark.sql.types._\nimport org.apache.spark.sql.functions._\n\u001b[1m\u001b[34mdateColumnNames\u001b[0m: \u001b[1m\u001b[32mArray[String]\u001b[0m \u003d Array(fecha_insc_date)\n\u001b[1m\u001b[34mstatsExprs\u001b[0m: \u001b[1m\u001b[32mArray[org.apache.spark.sql.Column]\u001b[0m \u003d Array(count(fecha_insc_date) AS fecha_insc_date_count, min(fecha_insc_date) AS fecha_insc_date_min, max(fecha_insc_date) AS fecha_insc_date_max, count(fecha_insc_date) AS fecha_insc_date_countDistinct)\n\u001b[1m\u001b[34mdfStatsDateCols\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m \u003d [fecha_insc_date_count: bigint, fecha_insc_date_min: date ... 2 more fields]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308976_1856681566",
+      "id": "paragraph_1752092501859_1681624445",
+      "dateCreated": "2025-07-17 18:01:48.976",
+      "status": "READY"
+    },
+    {
+      "text": "%md\r\n\r\n**Calcular medidas estadísticas para la columna anio_nac del DataFrame dfNacidos**",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.977",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003e\u003cstrong\u003eCalcular medidas estadísticas para la columna anio_nac del DataFrame dfNacidos\u003c/strong\u003e\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308976_1575735854",
+      "id": "paragraph_1752092821310_702208958",
+      "dateCreated": "2025-07-17 18:01:48.977",
+      "status": "READY"
+    },
+    {
+      "text": "dfNacidos.select(\n    mode($\"anio_nac\"),\n    median($\"anio_nac\"),\n    stddev($\"anio_nac\"),\n    stddev_pop($\"anio_nac\"),   // divide N\n    stddev_samp($\"anio_nac\")   // divide N\n)\n.show",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.977",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionSupport": true,
+          "completionKey": "TAB"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+--------------+----------------+---------------------+--------------------+---------------------+\n|mode(anio_nac)|median(anio_nac)|stddev_samp(anio_nac)|stddev_pop(anio_nac)|stddev_samp(anio_nac)|\n+--------------+----------------+---------------------+--------------------+---------------------+\n|          2023|          2023.0|   1.5180530471163742|  1.5180499014759343|   1.5180530471163742|\n+--------------+----------------+---------------------+--------------------+---------------------+\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308977_724034497",
+      "id": "paragraph_1752093340802_622024639",
+      "dateCreated": "2025-07-17 18:01:48.977",
+      "status": "READY"
+    },
+    {
+      "text": "%md \r\n## TALLER EN CLASES",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.977",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eTALLER EN CLASES\u003c/h2\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308977_642852449",
+      "id": "paragraph_1752093369418_1613315767",
+      "dateCreated": "2025-07-17 18:01:48.977",
+      "status": "READY"
+    },
+    {
+      "text": "%md\n**En este codigo vamos a Identificar y mostrar los nombres de todas las columnas del DataFrame dfNacidosClean que esta como datos de tipo entero**\n\nLOS CUALES COMO resultado salen 3 columnas que se encuentran como enteros.\n",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.977",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003e\u003cstrong\u003eEn este codigo vamos a Identificar y mostrar los nombres de todas las columnas del DataFrame dfNacidosClean que esta como datos de tipo entero\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eLOS CUALES COMO resultado salen 3 columnas que se encuentran como enteros.\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308977_1064752238",
+      "id": "paragraph_1752553112213_1905831830",
+      "dateCreated": "2025-07-17 18:01:48.977",
+      "status": "READY"
+    },
+    {
+      "text": "// Columnas enteras correctamente tipadas\nimport org.apache.spark.sql.types._\n\nval columnasEnteras \u003d dfNacidosClean.schema.fields.collect {\n  case StructField(name, IntegerType | LongType | ShortType, _, _) \u003d\u003e name\n}\n\nprintln(\" Columnas enteras reales \")\ncolumnasEnteras.foreach(c \u003d\u003e println(s\"  - $c\"))\n",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.977",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionSupport": true,
+          "completionKey": "TAB"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": " Columnas enteras reales \n  - anio_nac\n  - dia_nac\n  - hij_viv\nimport org.apache.spark.sql.types._\n\u001b[1m\u001b[34mcolumnasEnteras\u001b[0m: \u001b[1m\u001b[32mArray[String]\u001b[0m \u003d Array(anio_nac, dia_nac, hij_viv)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308977_950022289",
+      "id": "paragraph_1752549025451_2087471742",
+      "dateCreated": "2025-07-17 18:01:48.977",
+      "status": "READY"
+    },
+    {
+      "text": "%md\r\n**Este código vamos a buscar columnas que están definidas como texto (StringType), pero que probablemente contienen números enteros, es decir\r\n valores que debian estar como tipo entero pero por alguna razon no lo estan**\r\n \r\n Nos dan como resultado que hay 15 columnas encotradas",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.977",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003e\u003cstrong\u003eEste código vamos a buscar columnas que están definidas como texto (StringType), pero que probablemente contienen números enteros, es decir\u003cbr /\u003e\nvalores que debian estar como tipo entero pero por alguna razon no lo estan\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eNos dan como resultado que hay 15 columnas encotradas\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308977_1814771971",
+      "id": "paragraph_1752553691655_1158489753",
+      "dateCreated": "2025-07-17 18:01:48.977",
+      "status": "READY"
+    },
+    {
+      "text": "//Columnas tipo String que parecen contener enteros\r\n\r\nimport org.apache.spark.sql.functions._\r\n\r\nval columnasStringSospechosas \u003d dfNacidosClean.schema.fields.collect {\r\n  case StructField(name, StringType, _, _) \u003d\u003e name\r\n}.filter { colName \u003d\u003e\r\n  val total \u003d dfNacidosClean.select(colName).na.drop().count()\r\n  val enterosConvertibles \u003d dfNacidosClean\r\n    .select(colName)\r\n    .na.drop()\r\n    .filter(col(colName).cast(\"long\").isNotNull)\r\n    .count()\r\n  total \u003e 0 \u0026\u0026 enterosConvertibles.toDouble / total \u003e\u003d 0.9\r\n}\r\n\r\nprintln(\" Columnas String que podrían ser enteras:\")\r\ncolumnasStringSospechosas.foreach(c \u003d\u003e println(s\"  - $c\"))\r\n",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.977",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": " Columnas String que podrían ser enteras:\n  - anio_insc\n  - dia_insc\n  - talla\n  - peso\n  - sem_gest\n  - apgar1\n  - apgar5\n  - anio_mad\n  - dia_mad\n  - edad_mad\n  - con_pren\n  - num_emb\n  - num_par\n  - hij_vivm\n  - hij_nacm\nimport org.apache.spark.sql.functions._\n\u001b[1m\u001b[34mcolumnasStringSospechosas\u001b[0m: \u001b[1m\u001b[32mArray[String]\u001b[0m \u003d Array(anio_insc, dia_insc, talla, peso, sem_gest, apgar1, apgar5, anio_mad, dia_mad, edad_mad, con_pren, num_emb, num_par, hij_vivm, hij_nacm)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308977_376445011",
+      "id": "paragraph_1752549041923_1288713232",
+      "dateCreated": "2025-07-17 18:01:48.977",
+      "status": "READY"
+    },
+    {
+      "text": "%md\r\n**Vamos a ver el contenido de cada columna entera del DataFrame dfNacidosClean para**\r\n\r\nMostrar cuántos valores únicos tiene cada columna entera\r\n\r\nMostrar una tabla de frecuencia (conteo de cuántas veces aparece cada valor) ordenada de mayor a menor frecuencia",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.977",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003e\u003cstrong\u003eVamos a ver el contenido de cada columna entera del DataFrame dfNacidosClean para\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eMostrar cuántos valores únicos tiene cada columna entera\u003c/p\u003e\n\u003cp\u003eMostrar una tabla de frecuencia (conteo de cuántas veces aparece cada valor) ordenada de mayor a menor frecuencia\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308977_304740363",
+      "id": "paragraph_1752555053497_432597498",
+      "dateCreated": "2025-07-17 18:01:48.977",
+      "status": "READY"
+    },
+    {
+      "text": "// presentar\r\nprintln(\" Valores únicos por columna entera real:\")\r\n\r\ncolumnasEnteras.foreach { colName \u003d\u003e\r\n  val distintos \u003d dfNacidosClean.select(col(colName)).distinct().count()\r\n  println(s\"\\nColumna: $colName — Valores distintos: $distintos\")\r\n  dfNacidosClean.groupBy(col(colName)).count().orderBy(desc(\"count\")).show(false)\r\n}\r\n",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.977",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": " Valores únicos por columna entera real:\n\nColumna: anio_nac — Valores distintos: 41\n+--------+------+\n|anio_nac|count |\n+--------+------+\n|2023    |238772|\n|2022    |757   |\n|2021    |418   |\n|2020    |320   |\n|2019    |154   |\n|2018    |123   |\n|2013    |104   |\n|2017    |97    |\n|2014    |91    |\n|2015    |82    |\n|2016    |78    |\n|2012    |62    |\n|2011    |46    |\n|2010    |35    |\n|2006    |28    |\n|2008    |26    |\n|2009    |22    |\n|2005    |22    |\n|2007    |20    |\n|1900    |15    |\n+--------+------+\nonly showing top 20 rows\n\n\nColumna: dia_nac — Valores distintos: 31\n+-------+-----+\n|dia_nac|count|\n+-------+-----+\n|6      |8416 |\n|7      |8243 |\n|10     |8205 |\n|27     |8167 |\n|28     |8163 |\n|20     |8131 |\n|4      |8112 |\n|17     |8101 |\n|14     |8044 |\n|5      |8041 |\n|11     |8033 |\n|13     |7997 |\n|3      |7975 |\n|8      |7960 |\n|1      |7946 |\n|18     |7915 |\n|16     |7912 |\n|23     |7908 |\n|15     |7859 |\n|24     |7838 |\n+-------+-----+\nonly showing top 20 rows\n\n\nColumna: hij_viv — Valores distintos: 15\n+-------+-----+\n|hij_viv|count|\n+-------+-----+\n|1      |98215|\n|2      |74535|\n|3      |42847|\n|4      |15666|\n|5      |5758 |\n|6      |2341 |\n|7      |1043 |\n|8      |470  |\n|9      |214  |\n|10     |110  |\n|11     |60   |\n|12     |22   |\n|13     |9    |\n|14     |4    |\n|16     |1    |\n+-------+-----+\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308977_1244003761",
+      "id": "paragraph_1752553253158_10255587",
+      "dateCreated": "2025-07-17 18:01:48.977",
+      "status": "READY"
+    },
+    {
+      "text": "%md\r\n**Ahora mostraremos los datos de las columnas de tipo string que deberian ser numericos**\r\n\r\nnos ayudara a Tomar decisiones sobre si es necesario hacer una limpieza o transformación del dataset y observar las razones por las cuales el programa los tomo como string en ves de numerico \r\n\r\nHay algunas columnas que Estas deberían ser convertidas a tipo entero (IntegerType), pero no la son porque tienen valores diferentes o no validos como \"Sin información\" o vacíos. \r\n\r\nla columna \"peso\" tiene muchos valore distintos seria considerado como un dato continuo\r\n\r\n \r\n\r\n",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.978",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003e\u003cstrong\u003eAhora mostraremos los datos de las columnas de tipo string que deberian ser numericos\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003enos ayudara a Tomar decisiones sobre si es necesario hacer una limpieza o transformación del dataset y observar las razones por las cuales el programa los tomo como string en ves de numerico\u003c/p\u003e\n\u003cp\u003eHay algunas columnas que Estas deberían ser convertidas a tipo entero (IntegerType), pero no la son porque tienen valores diferentes o no validos como \u0026ldquo;Sin información\u0026rdquo; o vacíos.\u003c/p\u003e\n\u003cp\u003ela columna \u0026ldquo;peso\u0026rdquo; tiene muchos valore distintos seria considerado como un dato continuo\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308977_271494929",
+      "id": "paragraph_1752555359128_313377740",
+      "dateCreated": "2025-07-17 18:01:48.978",
+      "status": "READY"
+    },
+    {
+      "text": "// Presentación de las no numéricas\r\nprintln(\"\\nValores únicos por columna String sospechosa:\")\r\n\r\ncolumnasStringSospechosas.foreach { colName \u003d\u003e\r\n  val distintos \u003d dfNacidosClean.select(col(colName)).distinct().count()\r\n  println(s\"\\nColumna: $colName — Valores distintos: $distintos\")\r\n  dfNacidosClean.groupBy(col(colName)).count().orderBy(desc(\"count\")).show(false)\r\n}\r\n",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.978",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\nValores únicos por columna String sospechosa:\n\nColumna: anio_insc — Valores distintos: 4\n+---------+------+\n|anio_insc|count |\n+---------+------+\n|2023     |212079|\n|2024     |19068 |\n|         |9962  |\n|2001     |186   |\n+---------+------+\n\n\nColumna: dia_insc — Valores distintos: 32\n+--------+-----+\n|dia_insc|count|\n+--------+-----+\n|        |9962 |\n|27      |9007 |\n|13      |8886 |\n|17      |8614 |\n|10      |8497 |\n|22      |8399 |\n|20      |8278 |\n|6       |8032 |\n|15      |7923 |\n|8       |7893 |\n|4       |7840 |\n|19      |7838 |\n|24      |7825 |\n|16      |7819 |\n|5       |7814 |\n|7       |7780 |\n|28      |7746 |\n|14      |7746 |\n|18      |7696 |\n|23      |7537 |\n+--------+-----+\nonly showing top 20 rows\n\n\nColumna: talla — Valores distintos: 19\n+---------------+-----+\n|talla          |count|\n+---------------+-----+\n|50             |44547|\n|49             |42690|\n|48             |38292|\n|47             |26371|\n|51             |23937|\n|52             |19596|\n|46             |15009|\n|Sin información|8772 |\n|45             |8337 |\n|44             |4130 |\n|43             |2441 |\n|38             |1827 |\n|42             |1669 |\n|41             |1117 |\n|40             |1090 |\n|39             |584  |\n|53             |497  |\n|54             |206  |\n|55             |183  |\n+---------------+-----+\n\n\nColumna: peso — Valores distintos: 2969\n+---------------+-----+\n|peso           |count|\n+---------------+-----+\n|3000           |8786 |\n|Sin información|8687 |\n|3200           |6695 |\n|3100           |5752 |\n|3500           |5414 |\n|3300           |4990 |\n|2900           |4882 |\n|3400           |4759 |\n|2800           |4612 |\n|2700           |3354 |\n|3600           |3244 |\n|2500           |2728 |\n|2600           |2654 |\n|3700           |2221 |\n|3800           |1899 |\n|3250           |1856 |\n|3150           |1634 |\n|3050           |1549 |\n|2950           |1480 |\n|2850           |1468 |\n+---------------+-----+\nonly showing top 20 rows\n\n\nColumna: sem_gest — Valores distintos: 22\n+---------------+-----+\n|sem_gest       |count|\n+---------------+-----+\n|39             |71046|\n|38             |65833|\n|40             |41479|\n|37             |26020|\n|Sin información|9012 |\n|41             |8912 |\n|36             |7602 |\n|35             |3372 |\n|34             |2214 |\n|33             |1325 |\n|32             |1032 |\n|42             |892  |\n|31             |574  |\n|30             |572  |\n|29             |397  |\n|28             |334  |\n|27             |246  |\n|26             |191  |\n|25             |117  |\n|24             |78   |\n+---------------+-----+\nonly showing top 20 rows\n\n\nColumna: apgar1 — Valores distintos: 11\n+---------------+------+\n|apgar1         |count |\n+---------------+------+\n|8              |146361|\n|9              |57316 |\n|7              |19011 |\n|Sin información|9471  |\n|6              |4083  |\n|5              |1676  |\n|10             |1090  |\n|4              |838   |\n|3              |684   |\n|1              |398   |\n|2              |367   |\n+---------------+------+\n\n\nColumna: apgar5 — Valores distintos: 11\n+---------------+------+\n|apgar5         |count |\n+---------------+------+\n|9              |178774|\n|10             |33407 |\n|8              |14944 |\n|Sin información|9544  |\n|7              |2673  |\n|6              |848   |\n|5              |476   |\n|1              |209   |\n|4              |198   |\n|3              |141   |\n|2              |81    |\n+---------------+------+\n\n\nColumna: anio_mad — Valores distintos: 56\n+--------+-----+\n|anio_mad|count|\n+--------+-----+\n|1999    |13106|\n|2000    |12994|\n|2001    |12607|\n|1997    |12472|\n|2002    |12318|\n|1996    |12247|\n|1995    |11891|\n|1994    |11662|\n|1998    |11611|\n|1993    |11451|\n|2003    |11184|\n|1992    |10658|\n|2004    |9778 |\n|1991    |9524 |\n|1990    |8673 |\n|1989    |7947 |\n|2005    |7673 |\n|1988    |7330 |\n|2006    |6418 |\n|1987    |6346 |\n+--------+-----+\nonly showing top 20 rows\n\n\nColumna: dia_mad — Valores distintos: 32\n+-------+-----+\n|dia_mad|count|\n+-------+-----+\n|20     |9202 |\n|1      |9143 |\n|15     |8759 |\n|10     |8683 |\n|28     |8201 |\n|5      |8193 |\n|25     |8170 |\n|8      |8041 |\n|12     |8027 |\n|2      |8007 |\n|18     |7949 |\n|24     |7916 |\n|3      |7848 |\n|17     |7804 |\n|4      |7796 |\n|6      |7700 |\n|22     |7683 |\n|14     |7680 |\n|23     |7672 |\n|7      |7658 |\n+-------+-----+\nonly showing top 20 rows\n\n\nColumna: edad_mad — Valores distintos: 48\n+--------+-----+\n|edad_mad|count|\n+--------+-----+\n|23      |13307|\n|22      |12768|\n|21      |12565|\n|26      |12433|\n|24      |12198|\n|27      |12060|\n|25      |11942|\n|20      |11916|\n|28      |11864|\n|29      |11539|\n|30      |11071|\n|19      |10600|\n|31      |9987 |\n|32      |9180 |\n|18      |8691 |\n|33      |8247 |\n|34      |7642 |\n|17      |7257 |\n|35      |6721 |\n|36      |6056 |\n+--------+-----+\nonly showing top 20 rows\n\n\nColumna: con_pren — Valores distintos: 27\n+---------------+-----+\n|con_pren       |count|\n+---------------+-----+\n|5              |50430|\n|8              |34433|\n|6              |33727|\n|7              |29592|\n|9              |19537|\n|4              |18094|\n|10             |14062|\n|3              |10585|\n|Sin información|7251 |\n|2              |6253 |\n|12             |4374 |\n|1              |3993 |\n|0              |3049 |\n|11             |2279 |\n|15             |1349 |\n|13             |739  |\n|14             |636  |\n|20             |311  |\n|16             |192  |\n|18             |113  |\n+---------------+-----+\nonly showing top 20 rows\n\n\nColumna: num_emb — Valores distintos: 20\n+---------------+-----+\n|num_emb        |count|\n+---------------+-----+\n|1              |84118|\n|2              |70144|\n|3              |44323|\n|4              |20196|\n|5              |8776 |\n|Sin información|6693 |\n|6              |3764 |\n|7              |1698 |\n|8              |783  |\n|9              |399  |\n|10             |191  |\n|11             |108  |\n|12             |55   |\n|13             |30   |\n|14             |9    |\n|15             |3    |\n|16             |2    |\n|18             |1    |\n|17             |1    |\n|20             |1    |\n+---------------+-----+\n\n\nColumna: num_par — Valores distintos: 17\n+---------------+-----+\n|num_par        |count|\n+---------------+-----+\n|1              |91014|\n|2              |74205|\n|3              |42838|\n|4              |16019|\n|Sin información|6693 |\n|5              |5981 |\n|6              |2429 |\n|7              |1141 |\n|8              |499  |\n|9              |237  |\n|10             |115  |\n|11             |69   |\n|12             |39   |\n|13             |11   |\n|14             |3    |\n|15             |1    |\n|16             |1    |\n+---------------+-----+\n\n\nColumna: hij_vivm — Valores distintos: 11\n+---------------+------+\n|hij_vivm       |count |\n+---------------+------+\n|0              |229313|\n|Sin información|7145  |\n|1              |4282  |\n|2              |424   |\n|3              |78    |\n|4              |38    |\n|5              |5     |\n|7              |4     |\n|6              |4     |\n|8              |1     |\n|10             |1     |\n+---------------+------+\n\n\nColumna: hij_nacm — Valores distintos: 10\n+---------------+------+\n|hij_nacm       |count |\n+---------------+------+\n|0              |230153|\n|Sin información|7095  |\n|1              |3498  |\n|2              |438   |\n|3              |85    |\n|4              |18    |\n|5              |4     |\n|6              |2     |\n|7              |1     |\n|11             |1     |\n+---------------+------+\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308978_1831465732",
+      "id": "paragraph_1752554666967_530881550",
+      "dateCreated": "2025-07-17 18:01:48.978",
+      "status": "READY"
+    },
+    {
+      "text": "%md\r\n## TRANFORMAR LAS COLUMNAS A SU TIPO DE DATO CORRESPONDIENTE\r\n\r\nVamos a transformar las columnas que estan como tipo strinf pero son numericas para tener un dataset mas limpio ",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.978",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eTRANFORMAR LAS COLUMNAS A SU TIPO DE DATO CORRESPONDIENTE\u003c/h2\u003e\n\u003cp\u003eVamos a transformar las columnas que estan como tipo strinf pero son numericas para tener un dataset mas limpio\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308978_1929493880",
+      "id": "paragraph_1752607102343_559566468",
+      "dateCreated": "2025-07-17 18:01:48.978",
+      "status": "READY"
+    },
+    {
+      "text": "import org.apache.spark.sql.functions._\r\nimport org.apache.spark.sql.types._\r\n\r\n// Definimos una variable donde vamos hacer un map de cada columna y asignamos cada tipo de dato que le corresponde\r\nval columnsConver \u003d Map(\r\n  \"anio_insc\" -\u003e IntegerType,\r\n  \"dia_insc\" -\u003e IntegerType,\r\n  \"talla\" -\u003e IntegerType,\r\n  \"peso\" -\u003e DoubleType,\r\n  \"sem_gest\" -\u003e IntegerType,\r\n  \"apgar1\" -\u003e IntegerType,\r\n  \"apgar5\" -\u003e IntegerType,\r\n  \"anio_mad\" -\u003e IntegerType,\r\n  \"dia_mad\" -\u003e IntegerType,\r\n  \"edad_mad\" -\u003e IntegerType,\r\n  \"con_pren\" -\u003e IntegerType,\r\n  \"num_emb\" -\u003e IntegerType,\r\n  \"num_par\" -\u003e IntegerType,\r\n  \"hij_vivm\" -\u003e IntegerType,\r\n  \"hij_nacm\" -\u003e IntegerType\r\n)\r\n\r\n",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.978",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "import org.apache.spark.sql.functions._\nimport org.apache.spark.sql.types._\n\u001b[1m\u001b[34mcolumnsConver\u001b[0m: \u001b[1m\u001b[32mscala.collection.immutable.Map[String,org.apache.spark.sql.types.NumericType with Product with Serializable]\u001b[0m \u003d Map(anio_insc -\u003e IntegerType, anio_mad -\u003e IntegerType, dia_insc -\u003e IntegerType, dia_mad -\u003e IntegerType, num_emb -\u003e IntegerType, peso -\u003e DoubleType, edad_mad -\u003e IntegerType, talla -\u003e IntegerType, sem_gest -\u003e IntegerType, num_par -\u003e IntegerType, hij_vivm -\u003e IntegerType, apgar1 -\u003e IntegerType, con_pren -\u003e IntegerType, hij_nacm -\u003e IntegerType, apgar5 -\u003e IntegerType)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308978_737776646",
+      "id": "paragraph_1752555136675_1650699455",
+      "dateCreated": "2025-07-17 18:01:48.978",
+      "status": "READY"
+    },
+    {
+      "text": "// Crea una nueva variable dfConvertido que inicialmente copia el DataFrame original, para ir aplicándole cambios sin afectar al original\r\nvar dfConvertido \u003d dfNacidosClean\r\n\r\n//limpiamos las colummnas de los datos de las columnsConver \r\ncolumnsConver.foreach { case (colName, targetType) \u003d\u003e\r\n  dfConvertido \u003d dfConvertido.withColumn(\r\n    colName,\r\n    when(col(colName).isin(\"Sin información\", \"\"), null)\r\n      .otherwise(col(colName).cast(targetType))\r\n  )\r\n}\r\n\r\n//Mostrar esquema limpio\r\ndfConvertido.printSchema()",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.978",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "root\n |-- prov_insc: string (nullable \u003d true)\n |-- cant_insc: string (nullable \u003d true)\n |-- parr_insc: string (nullable \u003d true)\n |-- fecha_insc: string (nullable \u003d true)\n |-- anio_insc: integer (nullable \u003d true)\n |-- mes_insc: string (nullable \u003d true)\n |-- dia_insc: integer (nullable \u003d true)\n |-- sexo: string (nullable \u003d true)\n |-- fecha_nac: string (nullable \u003d true)\n |-- anio_nac: integer (nullable \u003d true)\n |-- mes_nac: string (nullable \u003d true)\n |-- dia_nac: integer (nullable \u003d true)\n |-- talla: integer (nullable \u003d true)\n |-- peso: double (nullable \u003d true)\n |-- sem_gest: integer (nullable \u003d true)\n |-- tipo_part: string (nullable \u003d true)\n |-- lugar_ocur: string (nullable \u003d true)\n |-- apgar1: integer (nullable \u003d true)\n |-- apgar5: integer (nullable \u003d true)\n |-- p_emb: string (nullable \u003d true)\n |-- prov_nac: string (nullable \u003d true)\n |-- cant_nac: string (nullable \u003d true)\n |-- parr_nac: string (nullable \u003d true)\n |-- area_nac: string (nullable \u003d true)\n |-- asis_por: string (nullable \u003d true)\n |-- nac_mad: string (nullable \u003d true)\n |-- cod_pais: string (nullable \u003d true)\n |-- fecha_mad: string (nullable \u003d true)\n |-- anio_mad: integer (nullable \u003d true)\n |-- mes_mad: string (nullable \u003d true)\n |-- dia_mad: integer (nullable \u003d true)\n |-- edad_mad: integer (nullable \u003d true)\n |-- con_pren: integer (nullable \u003d true)\n |-- num_emb: integer (nullable \u003d true)\n |-- num_par: integer (nullable \u003d true)\n |-- hij_viv: integer (nullable \u003d true)\n |-- hij_vivm: integer (nullable \u003d true)\n |-- hij_nacm: integer (nullable \u003d true)\n |-- etnia: string (nullable \u003d true)\n |-- est_civil: string (nullable \u003d true)\n |-- niv_inst: string (nullable \u003d true)\n |-- sabe_leer: string (nullable \u003d true)\n |-- prov_res: string (nullable \u003d true)\n |-- cant_res: string (nullable \u003d true)\n |-- parr_res: string (nullable \u003d true)\n |-- area_res: string (nullable \u003d true)\n |-- residente: string (nullable \u003d true)\n |-- fecha_insc_date: date (nullable \u003d true)\n\n\u001b[1m\u001b[34mdfConvertido\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m \u003d [prov_insc: string, cant_insc: string ... 46 more fields]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308978_1244730962",
+      "id": "paragraph_1752607541530_1856273612",
+      "dateCreated": "2025-07-17 18:01:48.978",
+      "status": "READY"
+    },
+    {
+      "text": "%md\r\n## Graficas del dataframe de las columnas de tipo string ",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.978",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eGraficas del dataframe de las columnas de tipo string\u003c/h2\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308978_11472028",
+      "id": "paragraph_1752601877578_1134751952",
+      "dateCreated": "2025-07-17 18:01:48.978",
+      "status": "READY"
+    },
+    {
+      "text": "%md\r\n**¿Cuál fue el tipo de parto más frecuente entre los recién nacidos de sexo masculino y femenino?**",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.978",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003e\u003cstrong\u003e¿Cuál fue el tipo de parto más frecuente entre los recién nacidos de sexo masculino y femenino?\u003c/strong\u003e\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308978_839655152",
+      "id": "paragraph_1752698557636_1960230647",
+      "dateCreated": "2025-07-17 18:01:48.978",
+      "status": "READY"
+    },
+    {
+      "text": "z.show(\r\n  dfConvertido\r\n    .groupBy(\"sexo\", \"tipo_part\")\r\n    .count()\r\n    .orderBy($\"count\".desc)\r\n)\r\n",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.978",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default",
+                  "stacked": false
+                },
+                "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default",
+                  "forceY": false,
+                  "lineWithFocus": false,
+                  "isDateFormat": false,
+                  "dateFormat": ""
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default",
+                  "style": "stack"
+                },
+                "scatterChart": {}
+              },
+              "keys": [
+                {
+                  "name": "sexo",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [
+                {
+                  "name": "tipo_part",
+                  "index": 1.0,
+                  "aggr": "sum"
+                }
+              ],
+              "values": [
+                {
+                  "name": "count",
+                  "index": 2.0,
+                  "aggr": "sum"
+                },
+                {
+                  "name": "tipo_part",
+                  "index": 1.0,
+                  "aggr": "count"
+                }
+              ]
+            }
+          }
+        },
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "sexo\ttipo_part\tcount\nHombre\tNormal\t62328\nHombre\tCesárea\t60911\nMujer\tNormal\t60077\nMujer\tCesárea\t57979\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308978_271901689",
+      "id": "paragraph_1752696922234_2029180535",
+      "dateCreated": "2025-07-17 18:01:48.978",
+      "status": "READY"
+    },
+    {
+      "text": "%md\r\n **CUALES SON LAS 4 PROVINCIAS DONDE HUBIERON MAS inscripciones DE NACIMIENTOS EN EN PAIS**",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.979",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003e\u003cstrong\u003eCUALES SON LAS 4 PROVINCIAS DONDE HUBIERON MAS inscripciones DE NACIMIENTOS EN EN PAIS\u003c/strong\u003e\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308978_25255458",
+      "id": "paragraph_1752698436234_2109295922",
+      "dateCreated": "2025-07-17 18:01:48.979",
+      "status": "READY"
+    },
+    {
+      "text": "z.show(\r\n  dfConvertido\r\n    .groupBy(\"prov_insc\")\r\n    .count()\r\n    .orderBy($\"count\".desc)\r\n    .filter(\"count \u003e 10000\")\r\n)\r\n",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.979",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "pieChart",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {},
+              "keys": [
+                {
+                  "name": "prov_insc",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "count",
+                  "index": 1.0,
+                  "aggr": "sum"
+                }
+              ]
+            }
+          }
+        },
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "prov_insc\tcount\nGuayas\t60121\nPichincha\t34499\nManabí\t23006\nLos Ríos\t14996\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308979_1135385425",
+      "id": "paragraph_1752698314494_483200078",
+      "dateCreated": "2025-07-17 18:01:48.979",
+      "status": "READY"
+    },
+    {
+      "text": "%md\r\n**¿Dónde ocurren más nacimientos?**",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.979",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003e\u003cstrong\u003e¿Dónde ocurren más nacimientos?\u003c/strong\u003e\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308979_1074986322",
+      "id": "paragraph_1752698898504_386207914",
+      "dateCreated": "2025-07-17 18:01:48.979",
+      "status": "READY"
+    },
+    {
+      "text": "z.show(\r\n  dfConvertido\r\n    .groupBy(\"lugar_ocur\")\r\n    .count()\r\n    .orderBy($\"count\".desc)\r\n)\r\n",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.979",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default",
+                  "stacked": false
+                }
+              },
+              "keys": [
+                {
+                  "name": "lugar_ocur",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "count",
+                  "index": 1.0,
+                  "aggr": "sum"
+                }
+              ]
+            }
+          }
+        },
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "lugar_ocur\tcount\nEstablecimiento del Ministerio de Salud\t150612\nHospital, Clínica o Consultorio Privado\t58912\nEstablecimiento del IESS\t19591\nSin información\t6693\nCasa\t2452\nOtro Establecimiento Público\t1644\nEstablecimiento de la Junta de Beneficencia\t1014\nOtro\t377\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308979_82304199",
+      "id": "paragraph_1752698123996_914411589",
+      "dateCreated": "2025-07-17 18:01:48.979",
+      "status": "READY"
+    },
+    {
+      "text": "%md\r\n**Madres adolescentes (edad \u003c 20) por estado civil, ordenado por cantidad de hijos vivos**",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.979",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003e\u003cstrong\u003eMadres adolescentes (edad \u0026lt; 20) por estado civil, ordenado por cantidad de hijos vivos\u003c/strong\u003e\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308979_544291297",
+      "id": "paragraph_1752700507825_965998391",
+      "dateCreated": "2025-07-17 18:01:48.979",
+      "status": "READY"
+    },
+    {
+      "text": "z.show(\r\n  dfConvertido\r\n    .filter($\"edad_mad\" \u003c 20)\r\n    .groupBy(\"est_civil\")\r\n    .agg(\r\n      count(\"*\").alias(\"total_madres\"),\r\n      avg(\"hij_viv\").alias(\"prom_hijos_vivos\")\r\n    )\r\n    .orderBy($\"prom_hijos_vivos\".desc)\r\n)\r\n",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:01:48.979",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default",
+                  "stacked": false
+                },
+                "scatterChart": {},
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default",
+                  "style": "stack"
+                },
+                "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default",
+                  "forceY": false,
+                  "lineWithFocus": false,
+                  "isDateFormat": false,
+                  "dateFormat": ""
+                }
+              },
+              "keys": [
+                {
+                  "name": "est_civil",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "total_madres",
+                  "index": 1.0,
+                  "aggr": "sum"
+                }
+              ]
+            }
+          }
+        },
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "est_civil\ttotal_madres\tprom_hijos_vivos\nUnión de hecho\t726\t1.209366391184573\nUnida\t6200\t1.200483870967742\nViuda\t6\t1.1666666666666667\nCasada\t683\t1.1625183016105418\nSoltera\t29401\t1.1479881636679024\nSin información\t9\t1.1111111111111112\nSeparada\t2\t1.0\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308979_28581976",
+      "id": "paragraph_1752698856710_125029920",
+      "dateCreated": "2025-07-17 18:01:48.979",
+      "status": "READY"
+    },
+    {
+      "text": "%md\r\n## Analisis de outliers\r\n\r\n**1. Método 1: Desviación Estándar**",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:10:31.238",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eAnalisis de outliers\u003c/h2\u003e\n\u003cp\u003e\u003cstrong\u003e1. Método 1: Desviación Estándar\u003c/strong\u003e\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775308979_1396558381",
+      "id": "paragraph_1752699052220_505820166",
+      "dateCreated": "2025-07-17 18:01:48.979",
+      "dateStarted": "2025-07-17 18:10:31.239",
+      "dateFinished": "2025-07-17 18:10:31.243",
+      "status": "FINISHED"
+    },
+    {
+      "text": "\nval stats \u003d dfConvertido\n    .select(\n        avg(\"anio_nac\").as(\"media\"),\n        stddev(\"anio_nac\").as(\"desvacion_estandar\")\n    ).first\n",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:03:21.129",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionSupport": true,
+          "completionKey": "TAB"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mstats\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.Row\u001b[0m \u003d [2022.9372345054808,1.5180530471163742]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d294"
+            },
+            {
+              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d295"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775392342_480535542",
+      "id": "paragraph_1752775392342_480535542",
+      "dateCreated": "2025-07-17 18:03:12.342",
+      "dateStarted": "2025-07-17 18:03:21.132",
+      "dateFinished": "2025-07-17 18:03:22.462",
+      "status": "FINISHED"
+    },
+    {
+      "text": "val media \u003d stats.getAs[Double](\"media\")\r\nval desStand \u003d stats.getAs[Double](\"desvacion_estandar\")\r\nval umbralDesviacion \u003d 2.0",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:04:04.507",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {}
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mmedia\u001b[0m: \u001b[1m\u001b[32mDouble\u001b[0m \u003d 2022.9372345054808\n\u001b[1m\u001b[34mdesStand\u001b[0m: \u001b[1m\u001b[32mDouble\u001b[0m \u003d 1.5180530471163742\n\u001b[1m\u001b[34mumbralDesviacion\u001b[0m: \u001b[1m\u001b[32mDouble\u001b[0m \u003d 2.0\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775401132_125658234",
+      "id": "paragraph_1752775401132_125658234",
+      "dateCreated": "2025-07-17 18:03:21.132",
+      "dateStarted": "2025-07-17 18:04:04.512",
+      "dateFinished": "2025-07-17 18:04:04.803",
+      "status": "FINISHED"
+    },
+    {
+      "text": "val limiteInfDS \u003d media - umbralDesviacion * desStand\r\nval limiteSupDS \u003d media + umbralDesviacion * desStand",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:04:12.596",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {}
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mlimiteInfDS\u001b[0m: \u001b[1m\u001b[32mDouble\u001b[0m \u003d 2019.901128411248\n\u001b[1m\u001b[34mlimiteSupDS\u001b[0m: \u001b[1m\u001b[32mDouble\u001b[0m \u003d 2025.9733405997135\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775444512_1274044286",
+      "id": "paragraph_1752775444512_1274044286",
+      "dateCreated": "2025-07-17 18:04:04.512",
+      "dateStarted": "2025-07-17 18:04:12.599",
+      "dateFinished": "2025-07-17 18:04:12.755",
+      "status": "FINISHED"
+    },
+    {
+      "text": "val outliersDS1 \u003d dfConvertido\r\n    .where($\"anio_nac\" \u003c limiteInfDS || $\"anio_nac\" \u003e limiteSupDS)\r\n",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:04:18.655",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {}
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34moutliersDS1\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.Dataset[org.apache.spark.sql.Row]\u001b[0m \u003d [prov_insc: string, cant_insc: string ... 46 more fields]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775452598_466684672",
+      "id": "paragraph_1752775452598_466684672",
+      "dateCreated": "2025-07-17 18:04:12.598",
+      "dateStarted": "2025-07-17 18:04:18.658",
+      "dateFinished": "2025-07-17 18:04:18.845",
+      "status": "FINISHED"
+    },
+    {
+      "text": "outliersDS1.count",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:04:25.641",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {}
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres20\u001b[0m: \u001b[1m\u001b[32mLong\u001b[0m \u003d 1028\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d296"
+            },
+            {
+              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d297"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775458657_692811436",
+      "id": "paragraph_1752775458657_692811436",
+      "dateCreated": "2025-07-17 18:04:18.658",
+      "dateStarted": "2025-07-17 18:04:25.644",
+      "dateFinished": "2025-07-17 18:04:26.964",
+      "status": "FINISHED"
+    },
+    {
+      "text": "val outliersDS2 \u003d dfConvertido\r\n    .where($\"anio_nac\" \u003e\u003d limiteInfDS \u0026\u0026 $\"anio_nac\" \u003c\u003d limiteSupDS)",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:04:31.647",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {}
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34moutliersDS2\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.Dataset[org.apache.spark.sql.Row]\u001b[0m \u003d [prov_insc: string, cant_insc: string ... 46 more fields]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775465643_1136894137",
+      "id": "paragraph_1752775465643_1136894137",
+      "dateCreated": "2025-07-17 18:04:25.643",
+      "dateStarted": "2025-07-17 18:04:31.653",
+      "dateFinished": "2025-07-17 18:04:31.949",
+      "status": "FINISHED"
+    },
+    {
+      "text": "outliersDS2.count",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:06:39.447",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {}
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres21\u001b[0m: \u001b[1m\u001b[32mLong\u001b[0m \u003d 240267\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d298"
+            },
+            {
+              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d299"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775471651_741744808",
+      "id": "paragraph_1752775471651_741744808",
+      "dateCreated": "2025-07-17 18:04:31.651",
+      "dateStarted": "2025-07-17 18:06:39.453",
+      "dateFinished": "2025-07-17 18:06:40.640",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%md\r\n**Método 2: Cuartiles (IQR)**",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:11:10.791",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003e\u003cstrong\u003eMétodo 2: Cuartiles (IQR)\u003c/strong\u003e\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775478518_45268786",
+      "id": "paragraph_1752775478518_45268786",
+      "dateCreated": "2025-07-17 18:04:38.518",
+      "dateStarted": "2025-07-17 18:11:10.791",
+      "dateFinished": "2025-07-17 18:11:10.795",
+      "status": "FINISHED"
+    },
+    {
+      "text": "\nval cuartiles \u003d dfConvertido.stat.approxQuantile(\n    \"anio_nac\", Array(0.25, 0.75), 0.01\n)\n\n\nval q1 \u003d cuartiles(0)\nval q3 \u003d cuartiles(1)\nval iqr \u003d q3 - q1\n\n\nval limiteInferiorIQR \u003d q1 - 1.5 * iqr\nval limiteSuperiorIQR \u003d q3 + 1.5 * iqr\n\nval outliersIQR \u003d dfConvertido.filter(\n    col(\"anio_nac\") \u003c limiteInferiorIQR || col(\"anio_nac\") \u003e limiteSuperiorIQR)\n    \noutliersIQR.count    ",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:12:37.043",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionSupport": true,
+          "completionKey": "TAB"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mcuartiles\u001b[0m: \u001b[1m\u001b[32mArray[Double]\u001b[0m \u003d Array(2023.0, 2023.0)\n\u001b[1m\u001b[34mq1\u001b[0m: \u001b[1m\u001b[32mDouble\u001b[0m \u003d 2023.0\n\u001b[1m\u001b[34mq3\u001b[0m: \u001b[1m\u001b[32mDouble\u001b[0m \u003d 2023.0\n\u001b[1m\u001b[34miqr\u001b[0m: \u001b[1m\u001b[32mDouble\u001b[0m \u003d 0.0\n\u001b[1m\u001b[34mlimiteInferiorIQR\u001b[0m: \u001b[1m\u001b[32mDouble\u001b[0m \u003d 2023.0\n\u001b[1m\u001b[34mlimiteSuperiorIQR\u001b[0m: \u001b[1m\u001b[32mDouble\u001b[0m \u003d 2023.0\n\u001b[1m\u001b[34moutliersIQR\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.Dataset[org.apache.spark.sql.Row]\u001b[0m \u003d [prov_insc: string, cant_insc: string ... 46 more fields]\n\u001b[1m\u001b[34mres22\u001b[0m: \u001b[1m\u001b[32mLong\u001b[0m \u003d 2523\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d304"
+            },
+            {
+              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d305"
+            },
+            {
+              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d306"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775870790_932960905",
+      "id": "paragraph_1752775870790_932960905",
+      "dateCreated": "2025-07-17 18:11:10.790",
+      "dateStarted": "2025-07-17 18:12:37.049",
+      "dateFinished": "2025-07-17 18:12:39.211",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%md\r\n**Método 3: Boxplot (Visual en Zeppelin)**",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:13:24.172",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003e\u003cstrong\u003eMétodo 3: Boxplot (Visual en Zeppelin)\u003c/strong\u003e\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752775886369_283369921",
+      "id": "paragraph_1752775886369_283369921",
+      "dateCreated": "2025-07-17 18:11:26.369",
+      "dateStarted": "2025-07-17 18:13:24.172",
+      "dateFinished": "2025-07-17 18:13:24.177",
+      "status": "FINISHED"
+    },
+    {
+      "text": "\ndfConvertido.select(\"anio_nac\")\n    .createOrReplaceTempView(\"dfNacidosAnioNac\")",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:13:43.626",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionSupport": true,
+          "completionKey": "TAB"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752776004171_1246283083",
+      "id": "paragraph_1752776004171_1246283083",
+      "dateCreated": "2025-07-17 18:13:24.171",
+      "dateStarted": "2025-07-17 18:13:43.629",
+      "dateFinished": "2025-07-17 18:13:43.965",
+      "status": "FINISHED"
+    },
+    {
+      "text": "z.show(dfConvertido.select(\"anio_nac\"))",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:13:51.544",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {}
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "anio_nac\n2005\n2006\n2007\n2007\n2008\n2009\n2010\n2010\n2011\n2008\n2010\n2013\n2013\n2014\n2014\n2015\n2013\n2015\n2015\n2015\n2016\n2016\n2016\n2016\n2017\n2016\n2017\n2016\n2017\n2017\n2018\n2018\n2017\n2018\n2019\n2019\n2020\n2020\n2018\n2020\n2018\n2020\n2020\n2020\n2018\n2019\n2020\n2019\n2020\n2020\n2021\n2021\n2021\n2021\n2021\n2020\n2021\n2021\n2021\n2022\n2021\n2020\n2022\n2022\n2022\n2023\n2022\n2023\n2023\n2023\n2022\n2020\n2023\n2023\n2022\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2022\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2022\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2022\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2022\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2021\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2022\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2022\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2021\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n"
+          },
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"result-alert alert-warning\" role\u003d\"alert\"\u003e\u003cbutton type\u003d\"button\" class\u003d\"close\" data-dismiss\u003d\"alert\" aria-label\u003d\"Close\"\u003e\u003cspan aria-hidden\u003d\"true\"\u003e\u0026times;\u003c/span\u003e\u003c/button\u003e\u003cstrong\u003eOutput is truncated\u003c/strong\u003e to 1000 rows. Learn more about \u003cstrong\u003ezeppelin.spark.maxResult\u003c/strong\u003e\u003c/div\u003e\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d307"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752776023628_223500653",
+      "id": "paragraph_1752776023628_223500653",
+      "dateCreated": "2025-07-17 18:13:43.628",
+      "dateStarted": "2025-07-17 18:13:51.546",
+      "dateFinished": "2025-07-17 18:13:51.773",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%pyspark\r\n\r\nimport matplotlib.pyplot as plt\r\nimport seaborn as sns\r\nimport pandas as pd",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:14:09.275",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752776031546_1763553607",
+      "id": "paragraph_1752776031546_1763553607",
+      "dateCreated": "2025-07-17 18:13:51.546",
+      "dateStarted": "2025-07-17 18:14:09.278",
+      "dateFinished": "2025-07-17 18:14:12.516",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%pyspark\ntmp_view_nacidos \u003d spark.sql(\"SELECT * FROM dfNacidosAnioNac\")\ndf_nacidos_anio_nac \u003d tmp_view_nacidos.toPandas()\n",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:14:22.729",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d308"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752776049277_846291945",
+      "id": "paragraph_1752776049277_846291945",
+      "dateCreated": "2025-07-17 18:14:09.277",
+      "dateStarted": "2025-07-17 18:14:22.731",
+      "dateFinished": "2025-07-17 18:14:25.694",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%pyspark\nz.show(df_nacidos_anio_nac)",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:14:35.313",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "anio_nac\n2005\n2006\n2007\n2007\n2008\n2009\n2010\n2010\n2011\n2008\n2010\n2013\n2013\n2014\n2014\n2015\n2013\n2015\n2015\n2015\n2016\n2016\n2016\n2016\n2017\n2016\n2017\n2016\n2017\n2017\n2018\n2018\n2017\n2018\n2019\n2019\n2020\n2020\n2018\n2020\n2018\n2020\n2020\n2020\n2018\n2019\n2020\n2019\n2020\n2020\n2021\n2021\n2021\n2021\n2021\n2020\n2021\n2021\n2021\n2022\n2021\n2020\n2022\n2022\n2022\n2023\n2022\n2023\n2023\n2023\n2022\n2020\n2023\n2023\n2022\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2022\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2022\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2022\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2022\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2021\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2022\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2022\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2021\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n2023\n"
+          },
+          {
+            "type": "HTML",
+            "data": "\u003cfont color\u003dred\u003eResults are limited by 1000.\u003c/font\u003e\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752776062731_997388486",
+      "id": "paragraph_1752776062731_997388486",
+      "dateCreated": "2025-07-17 18:14:22.731",
+      "dateStarted": "2025-07-17 18:14:35.320",
+      "dateFinished": "2025-07-17 18:14:35.342",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%pyspark\nplt.figure(figsize\u003d(10, 6))\nplt.boxplot(df_nacidos_anio_nac[\u0027anio_nac\u0027], showfliers\u003dTrue)\nplt.title(\u0027Boxplot de anio_nac para Detección de Outliers\u0027)\nplt.ylabel(\u0027Año nacimiento\u0027)\nplt.grid(True, linestyle\u003d\u0027--\u0027, alpha\u003d0.7)\nplt.show()\n",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:14:54.549",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv style\u003d\u0027width:auto;height:auto\u0027\u003e\u003cimg src\u003ddata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAtAAAAGwCAYAAACAS1JbAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjMsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvZiW1igAAAAlwSFlzAAALEwAACxMBAJqcGAAAR9BJREFUeJzt3Xl0VPXh///XkEWWLCSBhGzEmITsigoWLIKBUmoLVNSqUWQLUqyA1bY/xNQKlWAU61Kw1dCgYDUoH1upfgT1tGCNlVJskYSsxCwQIEAIWUgg2/39wcl8SFl0/Opcrvf5OIdzmDuZO6+b9wy85s773uswDMMQAAAAgC+kj9kBAAAAACuhQAMAAAAuoEADAAAALqBAAwAAAC6gQAMAAAAuoEADAAAALqBAAwAAAC6gQAMAAAAuoEADAAAALqBAAwAAAC6gQAMAAAAuoEADAAAALqBAAwAAAC6gQAMAAAAuoEADAAAALqBAAwAAAC6gQAMAAAAuoEADAAAALqBAAwAAAC6gQAMAAAAuoEADAAAALqBAAwAAAC6gQAMAAAAuoEADAAAALqBAAwAAAC6gQAMAAAAuoEADAAAALqBAAwAAAC6gQAMAAAAuoEADAAAALqBAAwAAAC6gQAMAAAAuoEADAAAALqBAAwAAAC6gQAMAAAAuoEADNudwOLR3796vZd1Lly7V9OnTv5Z1X8gNN9ygdevWuf158dV75ZVX9N3vfves5eXl5briiitUXV39lT3X1/le+DJmzZqlX/7yl5KkDz/8UPHx8SYnAtCDAg1cJC699FL169dPPj4+CggI0A9+8APt27fP7FhOL730ksaMGWN2jC9k8+bNmjlzptkxLmpVVVVyOBzy8fGRj4+PQkJCNHnyZL3//vtfeB3u+IB055136r333uu1rLGxUfPmzdP//M//KCoq6mt9/i9q//79uvPOOxUUFKQBAwbommuu0dtvv/2FH/9576/rrrtOpaWlX0VUAF8BCjRwEXnrrbfU0tKigwcPKiQkRAsXLjQ7Eiyis7PzSz3u+PHjamlp0aeffqqJEydq2rRpeumll77acF8xf39/bd26VXFxcWZHkSQdO3ZMY8aMkbe3t/bs2aOjR4/q/vvv1x133KH/+Z//MTvel35tADg/CjRwEerbt69uueUWFRUVOZc1NjZqxowZGjx4sKKiorR8+XJ1d3fr2LFjioiI0FtvvSVJamlpUWxsrNavXy/p9NfA8+fP18SJE+Xr66tx48ad92vv8z1HcXGx5s+fr48//lg+Pj4aOHDgOR9fWVmpcePGydfXVxMnTtTRo0d73b99+3Zde+21GjhwoK644gpt27btvL+D7OxsxcTEyNfXV0lJSfrzn//svK9nb93Pf/5zBQQEKDo6Wps3b3bef/311+sPf/iDJKm7u1vLly9XVFSUgoODNWPGDDU2Np7/l6//2zu7bt06DR06VIMGDVJWVpbz/h07dmj06NEaOHCgQkNDtWDBArW3tzvv37NnjyZOnKjAwECFhIRoxYoV53yezxub++67T5GRkfLz89PVV1+tDz/80Hnf0qVLdcstt2j69Ony8/PTSy+99Lm5LmTIkCG67777tHTpUi1evFjd3d2SpAMHDujmm2/W4MGDFR0drd/+9reSpC1btmjFihV67bXX5OPjoyuuuELS6ddQRkaGQkNDFR4erl/+8pfq6upyPs+aNWuUmJjoHNd///vfkqR9+/bppptu0uDBgxUUFKQFCxZIOnvP7D/+8Q+NHDlS/v7+GjlypP7xj38477v++uv18MMP69vf/rZ8fX313e9+96zX4JlWrlyp0NBQhYWFae3atb3uO3XqlH7+859r6NChCgkJ0fz589XW1nbO9Tz99NPy8fFRbm6uhgwZon79+ik9PV2ZmZn62c9+JsMwnK+pM8tsz+v0i7y/tm3bpoiICOft842LdP7XxogRI+Tn56eQkBA98MAD5/29APgCDAAXhaioKOP99983DMMwTpw4YcyYMcO46667nPffddddxtSpU42mpiajsrLSiIuLM/7whz8YhmEY7777rhESEmLU1dUZc+fONW6++Wbn42bOnGn4+PgYH3zwgXHy5Elj0aJFxre//W3n/ZKM8vLyz32OF198sdfjzmXUqFHG/fffb5w8edL44IMPDB8fH+POO+80DMMw9u/fbwQGBhr/+7//a3R1dRnvvfeeERgYaBw+fPic63r99deN2tpao6ury9iwYYPRv39/48CBA84snp6eRk5OjtHZ2Wn87ne/M0JDQ43u7m7DMAxj3Lhxxpo1awzDMIzc3FwjJibGqKioMJqbm41p06YZ06dPv+B2VFZWGpKMuXPnGq2trcauXbsMb29vo6ioyDAMw9i5c6fx8ccfGx0dHUZl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u0xPT9fTTz+tyspKtbS06KGHHtJtt932uXs7L6S5uVl+fn7y8fFRSUmJfv/73zvvmzx5sg4ePKhnnnlGp06dUnNzs/75z3+ed13nG5vm5mZ5enpq8ODB6uzs1K9//Ws1NTV96Vyfp66uTqtXr9ayZcv02GOPqU+fPrrmmmvk6+urxx9/XG1tberq6lJhYaH+9a9/STr9mqiqqnIWx9DQUH33u9/Vz372MzU1Nam7u1sVFRX64IMPJElz587Vk08+qU8++USGYWjv3r2qrq7WNddco9DQUD344IM6ceKETp48qY8++uisjN///vdVVlamV199VZ2dnXrttddUVFSkyZMnf+Ht7HHrrbfqpZdeUlFRkVpbW7Vs2TLnfX369NHdd9+t+++/37n3vLa2Vu++++4513X//fc7D548dOiQTp48qby8PGVlZWnlypXO13J4eLj++Mc/qqurS2vXru31YeLz3l9n+rxxOZc//vGPOnLkiPr06eM8SLFPHyoA8GXx7gEuIlOmTJGPj4/8/PyUmZmpdevWKTk5WZK0atUqDRgwQJdddpnGjBmjO+64Q3PmzNEnn3yip556SuvXr5eHh4cWL14sh8Oh7Oxs53rvuOMOLVu2TIGBgfrkk0/0xz/+8ZzPf77nkKTx48crOTlZQ4YMOe9X0q+++qr++c9/KjAwUMuWLdOMGTOc90VGRmrTpk1asWKFBg8erMjISK1cufKsvXaSlJSUpJ/97GcaPXq0QkJCVFBQoG9/+9tf6nc6Z84c3XXXXRo7dqyio6PVt29frVq16kutq8eTTz6pV199Vb6+vrr77rt12223Oe/z9fXV+++/r7feektDhgxRXFyctm7det51nW9sJk2apO9973saNmyYoqKi1Ldv37M+9LiS63wGDhyoAQMGKDU1Ve+88442btzoHHMPDw+9/fbb2rVrl6KjozVo0CDNnTvXeRaTH/3oR5KkoKAgXXXVVZJOT71pb29XUlKSAgICdMsttzinMvzoRz9SZmam7rjjDvn6+urGG2/UsWPH5OHhobfeekt79+7V0KFDFRERoddee+2srEFBQXr77bf1m9/8RkFBQXriiSf09ttvf6kpEjfccIN++tOfavz48YqNjdX48eN73f/4448rNjZWo0aNkp+fn77zne+c9zzMQUFBys/P18mTJ5WUlKSgoCA99dRTevnl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\u003d\u003d style\u003d\u0027width\u003dauto;height:auto\u0027\u003e\u003cdiv\u003e\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752776075319_907554840",
+      "id": "paragraph_1752776075319_907554840",
+      "dateCreated": "2025-07-17 18:14:35.319",
+      "dateStarted": "2025-07-17 18:14:54.552",
+      "dateFinished": "2025-07-17 18:14:54.737",
+      "status": "FINISHED"
+    },
+    {
+      "text": "\n\n    ",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-17 18:15:18.690",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1752776094551_90472945",
+      "id": "paragraph_1752776094551_90472945",
+      "dateCreated": "2025-07-17 18:14:54.552",
+      "status": "READY"
+    }
+  ],
+  "name": "PRO_finalOutliers",
+  "id": "2KYVFUAW3",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.12.0",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false
+  },
+  "info": {
+    "isRunning": false
+  }
+}
