@@ -3,7 +3,7 @@
     {
       "text": "%md\n",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:00:37.153",
+      "dateUpdated": "2025-07-17 17:51:02.152",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -35,14 +35,14 @@
       "jobName": "paragraph_1752606643222_329973673",
       "id": "paragraph_1752606643222_329973673",
       "dateCreated": "2025-07-15 19:10:43.222",
-      "dateStarted": "2025-07-16 21:00:37.179",
-      "dateFinished": "2025-07-16 21:00:39.829",
+      "dateStarted": "2025-07-17 17:51:02.178",
+      "dateFinished": "2025-07-17 17:51:04.905",
       "status": "FINISHED"
     },
     {
       "text": "%md\r\n## PROYECTO FINAL PA\r\n\r\nALEX SANCHEZ\r\n\r\nBRYAM JIMENEZ\r\n\r\n\r\nCSV  de Registros Estadísticos de Nacidos Vivos y Defunciones Fetales",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:00:39.881",
+      "dateUpdated": "2025-07-17 17:51:04.979",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -76,14 +76,14 @@
       "jobName": "paragraph_1752543941011_27996118",
       "id": "paragraph_1752088564211_1846190172",
       "dateCreated": "2025-07-15 01:45:41.011",
-      "dateStarted": "2025-07-16 21:00:39.887",
-      "dateFinished": "2025-07-16 21:00:39.913",
+      "dateStarted": "2025-07-17 17:51:04.988",
+      "dateFinished": "2025-07-17 17:51:05.016",
       "status": "FINISHED"
     },
     {
       "text": "%md\n## CARGA DE DATOS \n\nLECTURA DE DATOS DE Csv ENV_2023.csv",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:00:39.987",
+      "dateUpdated": "2025-07-17 17:51:05.088",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -117,15 +117,15 @@
       "jobName": "paragraph_1752543941012_1090006719",
       "id": "paragraph_1752088931405_1186899587",
       "dateCreated": "2025-07-15 01:45:41.012",
-      "dateStarted": "2025-07-16 21:00:39.993",
-      "dateFinished": "2025-07-16 21:00:40.002",
+      "dateStarted": "2025-07-17 17:51:05.096",
+      "dateFinished": "2025-07-17 17:51:05.108",
       "status": "FINISHED"
     },
     {
       "text": "val dfNacidos \u003d spark\n    .read\n    .option(\"header\", true)\n    .option(\"sep\", \";\")\n    .option(\"inferSchema\", true)\n    .csv(\"/workspace/Proyecto_Bimestral_JimLeo/ENV_2023.csv\")",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:00:40.093",
-      "progress": 0,
+      "dateUpdated": "2025-07-17 17:51:05.196",
+      "progress": 100,
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -173,14 +173,14 @@
       "jobName": "paragraph_1752543941012_1889884383",
       "id": "paragraph_1752089043726_568972041",
       "dateCreated": "2025-07-15 01:45:41.012",
-      "dateStarted": "2025-07-16 21:00:40.100",
-      "dateFinished": "2025-07-16 21:00:59.309",
+      "dateStarted": "2025-07-17 17:51:05.202",
+      "dateFinished": "2025-07-17 17:51:25.950",
       "status": "FINISHED"
     },
     {
       "text": "%md\r\nCONTAR CANTIDAD DE COLUMNAS Y FILAS DEL CSV",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:00:59.350",
+      "dateUpdated": "2025-07-17 17:51:26.045",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -214,14 +214,14 @@
       "jobName": "paragraph_1752543941012_1663121383",
       "id": "paragraph_1752089070438_1074808553",
       "dateCreated": "2025-07-15 01:45:41.012",
-      "dateStarted": "2025-07-16 21:00:59.356",
-      "dateFinished": "2025-07-16 21:00:59.362",
+      "dateStarted": "2025-07-17 17:51:26.050",
+      "dateFinished": "2025-07-17 17:51:26.057",
       "status": "FINISHED"
     },
     {
       "text": "print(s\"Registros (filas): ${dfNacidos.count}, Variables (columnas): ${dfNacidos.columns.length}\")\n",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:00:59.456",
+      "dateUpdated": "2025-07-17 17:51:26.150",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -270,14 +270,14 @@
       "jobName": "paragraph_1752543941012_426284356",
       "id": "paragraph_1752089145536_22668906",
       "dateCreated": "2025-07-15 01:45:41.013",
-      "dateStarted": "2025-07-16 21:00:59.461",
-      "dateFinished": "2025-07-16 21:01:00.768",
+      "dateStarted": "2025-07-17 17:51:26.155",
+      "dateFinished": "2025-07-17 17:51:27.577",
       "status": "FINISHED"
     },
     {
       "text": "%md\r\n**MOSTRAR EL ESQUEMA DE DE DataFrame dfNacidos**\r\n\r\nMuestra el nombre de cada columna, su tipo de dato (por ejemplo StringType, IntegerType, TimestampType, etc.)\r\ny si permite valores nulos (nullable \u003d true o false).",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:01:00.862",
+      "dateUpdated": "2025-07-17 17:51:27.658",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -311,14 +311,14 @@
       "jobName": "paragraph_1752543941013_1316631140",
       "id": "paragraph_1752089368534_1693585539",
       "dateCreated": "2025-07-15 01:45:41.013",
-      "dateStarted": "2025-07-16 21:01:00.867",
-      "dateFinished": "2025-07-16 21:01:00.877",
+      "dateStarted": "2025-07-17 17:51:27.663",
+      "dateFinished": "2025-07-17 17:51:27.674",
       "status": "FINISHED"
     },
     {
       "text": "dfNacidos.printSchema",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:01:00.967",
+      "dateUpdated": "2025-07-17 17:51:27.763",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -351,14 +351,14 @@
       "jobName": "paragraph_1752543941013_2058287808",
       "id": "paragraph_1752089249454_406865264",
       "dateCreated": "2025-07-15 01:45:41.013",
-      "dateStarted": "2025-07-16 21:01:00.972",
-      "dateFinished": "2025-07-16 21:01:01.193",
+      "dateStarted": "2025-07-17 17:51:27.767",
+      "dateFinished": "2025-07-17 17:51:27.983",
       "status": "FINISHED"
     },
     {
       "text": "%md\r\n**USO DE describe para Calcula estadísticas descriptivas de las columnas seleccionadas**\r\n**count:** cuántos valores no nulos hay                              \r\n**mean:** promedio (solo para numéricas)\r\n**stddev:** desviación estándar (solo para numéricas)                \r\n**min:** valor mínimo\r\n**max:** valor máximo",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:01:01.272",
+      "dateUpdated": "2025-07-17 17:51:28.068",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -392,15 +392,15 @@
       "jobName": "paragraph_1752543941013_1169661469",
       "id": "paragraph_1752089812171_351039653",
       "dateCreated": "2025-07-15 01:45:41.013",
-      "dateStarted": "2025-07-16 21:01:01.278",
-      "dateFinished": "2025-07-16 21:01:01.286",
+      "dateStarted": "2025-07-17 17:51:28.072",
+      "dateFinished": "2025-07-17 17:51:28.080",
       "status": "FINISHED"
     },
     {
       "text": "dfNacidos\r\n    .select(\"anio_insc\", \"dia_insc\", \"anio_nac\", \"dia_nac\")\r\n    .describe()\r\n    .show",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:01:01.377",
-      "progress": 100,
+      "dateUpdated": "2025-07-17 17:51:28.171",
+      "progress": 0,
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -448,14 +448,14 @@
       "jobName": "paragraph_1752543941013_1067165924",
       "id": "paragraph_1752089286120_478739836",
       "dateCreated": "2025-07-15 01:45:41.013",
-      "dateStarted": "2025-07-16 21:01:01.383",
-      "dateFinished": "2025-07-16 21:01:04.269",
+      "dateStarted": "2025-07-17 17:51:28.175",
+      "dateFinished": "2025-07-17 17:51:31.089",
       "status": "FINISHED"
     },
     {
       "text": "%md\r\n**IDENTIFICAR LAS COLUMNAS DE TIPO ENTERO DEL DATAFREME**\r\n\r\ny calcular un resumen estadístico básico ",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:01:04.310",
+      "dateUpdated": "2025-07-17 17:51:31.178",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -489,14 +489,14 @@
       "jobName": "paragraph_1752543941013_462799323",
       "id": "paragraph_1752090363196_393657003",
       "dateCreated": "2025-07-15 01:45:41.013",
-      "dateStarted": "2025-07-16 21:01:04.314",
-      "dateFinished": "2025-07-16 21:01:04.319",
+      "dateStarted": "2025-07-17 17:51:31.182",
+      "dateFinished": "2025-07-17 17:51:31.189",
       "status": "FINISHED"
     },
     {
       "text": "import org.apache.spark.sql.types._\r\n\r\nval numericCols \u003d dfNacidos.schema.fields.filter{\r\n  case StructField(_, IntegerType | LongType | FloatType | DoubleType | ShortType | DecimalType(), _, _) \u003d\u003e true\r\n  case _ \u003d\u003e false\r\n}.map(_.name)\r\n\r\ndfNacidos.select(numericCols.map(col) : _*).describe().show",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:01:04.414",
+      "dateUpdated": "2025-07-17 17:51:31.282",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -545,14 +545,14 @@
       "jobName": "paragraph_1752543941013_1344963356",
       "id": "paragraph_1752089471820_892259520",
       "dateCreated": "2025-07-15 01:45:41.014",
-      "dateStarted": "2025-07-16 21:01:04.417",
-      "dateFinished": "2025-07-16 21:01:06.392",
+      "dateStarted": "2025-07-17 17:51:31.286",
+      "dateFinished": "2025-07-17 17:51:33.271",
       "status": "FINISHED"
     },
     {
       "text": "%md\r\n**Calcula un resumen estadístico mas ampliado con summary**\r\nEn el summary incluye cuartiles",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:01:06.419",
+      "dateUpdated": "2025-07-17 17:51:33.287",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -586,14 +586,14 @@
       "jobName": "paragraph_1752543941014_2138644921",
       "id": "paragraph_1752090056694_1216663558",
       "dateCreated": "2025-07-15 01:45:41.014",
-      "dateStarted": "2025-07-16 21:01:06.426",
-      "dateFinished": "2025-07-16 21:01:06.454",
+      "dateStarted": "2025-07-17 17:51:33.290",
+      "dateFinished": "2025-07-17 17:51:33.296",
       "status": "FINISHED"
     },
     {
       "text": "dfNacidos.select(numericCols.map(col): _*).summary().show //ssumary permite mostrar cuartiles",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:01:06.522",
+      "dateUpdated": "2025-07-17 17:51:33.390",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -642,14 +642,14 @@
       "jobName": "paragraph_1752543941014_1966645189",
       "id": "paragraph_1752090779178_1192134529",
       "dateCreated": "2025-07-15 01:45:41.014",
-      "dateStarted": "2025-07-16 21:01:06.526",
-      "dateFinished": "2025-07-16 21:01:09.392",
+      "dateStarted": "2025-07-17 17:51:33.394",
+      "dateFinished": "2025-07-17 17:51:35.757",
       "status": "FINISHED"
     },
     {
       "text": "%md**DANDOLE A SUMMARY LAS ESTADITICAS QUE QUEREMOS VER**",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:01:09.429",
+      "dateUpdated": "2025-07-17 17:51:35.796",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -684,14 +684,14 @@
       "jobName": "paragraph_1752543941014_885236827",
       "id": "paragraph_1752090806252_1558490133",
       "dateCreated": "2025-07-15 01:45:41.014",
-      "dateStarted": "2025-07-16 21:01:09.433",
-      "dateFinished": "2025-07-16 21:01:09.438",
+      "dateStarted": "2025-07-17 17:51:35.799",
+      "dateFinished": "2025-07-17 17:51:35.804",
       "status": "FINISHED"
     },
     {
       "text": "dfNacidos.select(numericCols.map(col): _*).summary(\"stddev\", \"25%\").show",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:01:09.533",
+      "dateUpdated": "2025-07-17 17:51:35.899",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -740,14 +740,14 @@
       "jobName": "paragraph_1752543941014_1011630334",
       "id": "paragraph_1752091401245_1744613614",
       "dateCreated": "2025-07-15 01:45:41.014",
-      "dateStarted": "2025-07-16 21:01:09.536",
-      "dateFinished": "2025-07-16 21:01:11.336",
+      "dateStarted": "2025-07-17 17:51:35.905",
+      "dateFinished": "2025-07-17 17:51:37.847",
       "status": "FINISHED"
     },
     {
       "text": "dfNacidos.select(numericCols.map(col): _*).summary(\"count\", \"count_distinct\").show",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:01:11.341",
+      "dateUpdated": "2025-07-17 17:51:37.906",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -799,14 +799,14 @@
       "jobName": "paragraph_1752543941014_2096404813",
       "id": "paragraph_1752091418038_1862225677",
       "dateCreated": "2025-07-15 01:45:41.014",
-      "dateStarted": "2025-07-16 21:01:11.344",
-      "dateFinished": "2025-07-16 21:01:13.102",
+      "dateStarted": "2025-07-17 17:51:37.910",
+      "dateFinished": "2025-07-17 17:51:39.639",
       "status": "FINISHED"
     },
     {
       "text": "%md\r\n## TRANSFORMACIONES ",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:01:13.145",
+      "dateUpdated": "2025-07-17 17:51:39.711",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -841,14 +841,14 @@
       "jobName": "paragraph_1752543941014_548904852",
       "id": "paragraph_1752091438655_1897410838",
       "dateCreated": "2025-07-15 01:45:41.014",
-      "dateStarted": "2025-07-16 21:01:13.150",
-      "dateFinished": "2025-07-16 21:01:13.155",
+      "dateStarted": "2025-07-17 17:51:39.715",
+      "dateFinished": "2025-07-17 17:51:39.721",
       "status": "FINISHED"
     },
     {
       "text": "%md\nTranformamos el tipo de dato de la columna fecha_insc que era string a tipo date ",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:01:13.250",
+      "dateUpdated": "2025-07-17 17:51:39.815",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -882,14 +882,14 @@
       "jobName": "paragraph_1752543941015_316940899",
       "id": "paragraph_1752092226856_304717931",
       "dateCreated": "2025-07-15 01:45:41.015",
-      "dateStarted": "2025-07-16 21:01:13.253",
-      "dateFinished": "2025-07-16 21:01:13.259",
+      "dateStarted": "2025-07-17 17:51:39.818",
+      "dateFinished": "2025-07-17 17:51:39.823",
       "status": "FINISHED"
     },
     {
       "text": "val dfNacidosClean \u003d dfNacidos\n    .withColumn(\"fecha_insc_date\", to_date(col(\"fecha_insc\"), \"yyyy/MM/dd\"))\n",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:01:13.353",
+      "dateUpdated": "2025-07-17 17:51:39.918",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -922,14 +922,14 @@
       "jobName": "paragraph_1752543941015_1280483432",
       "id": "paragraph_1752091812882_714593201",
       "dateCreated": "2025-07-15 01:45:41.015",
-      "dateStarted": "2025-07-16 21:01:13.357",
-      "dateFinished": "2025-07-16 21:01:13.528",
+      "dateStarted": "2025-07-17 17:51:39.922",
+      "dateFinished": "2025-07-17 17:51:40.131",
       "status": "FINISHED"
     },
     {
       "text": "dfNacidosClean.printSchema",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:01:13.557",
+      "dateUpdated": "2025-07-17 17:51:40.222",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -962,14 +962,14 @@
       "jobName": "paragraph_1752543941015_531892151",
       "id": "paragraph_1752091913121_1962615345",
       "dateCreated": "2025-07-15 01:45:41.015",
-      "dateStarted": "2025-07-16 21:01:13.560",
-      "dateFinished": "2025-07-16 21:01:13.688",
+      "dateStarted": "2025-07-17 17:51:40.226",
+      "dateFinished": "2025-07-17 17:51:40.347",
       "status": "FINISHED"
     },
     {
       "text": "%md\r\n**análisis estadístico de todas las columnas de tipo fecha**\r\nIdentificación automática de columnas de tipo fecha\r\neneración de expresiones estadísticas para cada columna de fecha\r\n",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:01:13.760",
+      "dateUpdated": "2025-07-17 17:51:40.426",
       "progress": 0,
       "config": {
         "tableHide": true,
@@ -1003,14 +1003,14 @@
       "jobName": "paragraph_1752543941015_213468722",
       "id": "paragraph_1752092825178_985743362",
       "dateCreated": "2025-07-15 01:45:41.015",
-      "dateStarted": "2025-07-16 21:01:13.764",
-      "dateFinished": "2025-07-16 21:01:13.770",
+      "dateStarted": "2025-07-17 17:51:40.429",
+      "dateFinished": "2025-07-17 17:51:40.435",
       "status": "FINISHED"
     },
     {
       "text": "import org.apache.spark.sql.types._\r\nimport org.apache.spark.sql.functions._\r\n\r\n\r\n\r\nval dateColumnNames \u003d dfNacidosClean\r\n    .schema\r\n    .fields\r\n    .filter {\r\n        case StructField(_, TimestampType | DateType,_,_)\u003d\u003e true\r\n        case _ \u003d\u003e false\r\n    }\r\n    .map(_.name)\r\n\r\n// ejemplo \r\n//Generación de expresiones estadísticas para cada columna de fecha\r\nval statsExprs \u003d dateColumnNames\r\n    .flatMap {colName \u003d\u003e\r\n        Seq(\r\n            count(col(colName)).alias(s\"${colName}_count\"),\r\n            min(col(colName)).alias(s\"${colName}_min\"),\r\n            max(col(colName)).alias(s\"${colName}_max\"),\r\n            countDistinct(col(colName)).alias(s\"${colName}_countDistinct\")\r\n        )\r\n    }    \r\n\r\nval dfStatsDateCols \u003d dfNacidosClean\r\n    .select(statsExprs: _*)\r\n\r\ndfStatsDateCols.show()",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:01:13.864",
+      "dateUpdated": "2025-07-17 17:51:40.529",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -1062,14 +1062,14 @@
       "jobName": "paragraph_1752543941015_1504454316",
       "id": "paragraph_1752092501859_1681624445",
       "dateCreated": "2025-07-15 01:45:41.015",
-      "dateStarted": "2025-07-16 21:01:13.868",
-      "dateFinished": "2025-07-16 21:01:15.814",
+      "dateStarted": "2025-07-17 17:51:40.533",
+      "dateFinished": "2025-07-17 17:51:42.463",
       "status": "FINISHED"
     },
     {
       "text": "%md\r\n\r\n**Calcular medidas estadísticas para la columna anio_nac del DataFrame dfNacidos**",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:01:15.869",
+      "dateUpdated": "2025-07-17 17:51:42.535",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -1104,14 +1104,14 @@
       "jobName": "paragraph_1752543941015_1159006601",
       "id": "paragraph_1752092821310_702208958",
       "dateCreated": "2025-07-15 01:45:41.015",
-      "dateStarted": "2025-07-16 21:01:15.874",
-      "dateFinished": "2025-07-16 21:01:15.879",
+      "dateStarted": "2025-07-17 17:51:42.540",
+      "dateFinished": "2025-07-17 17:51:42.546",
       "status": "FINISHED"
     },
     {
       "text": "dfNacidos.select(\n    mode($\"anio_nac\"),\n    median($\"anio_nac\"),\n    stddev($\"anio_nac\"),\n    stddev_pop($\"anio_nac\"),   // divide N\n    stddev_samp($\"anio_nac\")   // divide N\n)\n.show",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:01:15.974",
+      "dateUpdated": "2025-07-17 17:51:42.640",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -1160,14 +1160,14 @@
       "jobName": "paragraph_1752543941016_876451831",
       "id": "paragraph_1752093340802_622024639",
       "dateCreated": "2025-07-15 01:45:41.016",
-      "dateStarted": "2025-07-16 21:01:15.977",
-      "dateFinished": "2025-07-16 21:01:17.382",
+      "dateStarted": "2025-07-17 17:51:42.645",
+      "dateFinished": "2025-07-17 17:51:44.085",
       "status": "FINISHED"
     },
     {
       "text": "%md \r\n## TALLER EN CLASES",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:01:17.478",
+      "dateUpdated": "2025-07-17 17:51:44.146",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -1202,14 +1202,14 @@
       "jobName": "paragraph_1752543941016_824637422",
       "id": "paragraph_1752093369418_1613315767",
       "dateCreated": "2025-07-15 01:45:41.016",
-      "dateStarted": "2025-07-16 21:01:17.482",
-      "dateFinished": "2025-07-16 21:01:17.487",
+      "dateStarted": "2025-07-17 17:51:44.150",
+      "dateFinished": "2025-07-17 17:51:44.155",
       "status": "FINISHED"
     },
     {
       "text": "%md\n**En este codigo vamos a Identificar y mostrar los nombres de todas las columnas del DataFrame dfNacidosClean que esta como datos de tipo entero**\n\nLOS CUALES COMO resultado salen 3 columnas que se encuentran como enteros.\n",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:01:17.582",
+      "dateUpdated": "2025-07-17 17:51:44.250",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -1243,14 +1243,14 @@
       "jobName": "paragraph_1752553112213_1905831830",
       "id": "paragraph_1752553112213_1905831830",
       "dateCreated": "2025-07-15 04:18:32.213",
-      "dateStarted": "2025-07-16 21:01:17.585",
-      "dateFinished": "2025-07-16 21:01:17.592",
+      "dateStarted": "2025-07-17 17:51:44.255",
+      "dateFinished": "2025-07-17 17:51:44.261",
       "status": "FINISHED"
     },
     {
       "text": "// Columnas enteras correctamente tipadas\nimport org.apache.spark.sql.types._\n\nval columnasEnteras \u003d dfNacidosClean.schema.fields.collect {\n  case StructField(name, IntegerType | LongType | ShortType, _, _) \u003d\u003e name\n}\n\nprintln(\" Columnas enteras reales \")\ncolumnasEnteras.foreach(c \u003d\u003e println(s\"  - $c\"))\n",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:01:17.685",
+      "dateUpdated": "2025-07-17 17:51:44.355",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -1283,14 +1283,14 @@
       "jobName": "paragraph_1752549025451_2087471742",
       "id": "paragraph_1752549025451_2087471742",
       "dateCreated": "2025-07-15 03:10:25.451",
-      "dateStarted": "2025-07-16 21:01:17.689",
-      "dateFinished": "2025-07-16 21:01:17.969",
+      "dateStarted": "2025-07-17 17:51:44.358",
+      "dateFinished": "2025-07-17 17:51:44.622",
       "status": "FINISHED"
     },
     {
       "text": "%md\r\n**Este código vamos a buscar columnas que están definidas como texto (StringType), pero que probablemente contienen números enteros, es decir\r\n valores que debian estar como tipo entero pero por alguna razon no lo estan**\r\n \r\n Nos dan como resultado que hay 15 columnas encotradas",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:01:17.989",
+      "dateUpdated": "2025-07-17 17:51:44.658",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -1324,14 +1324,14 @@
       "jobName": "paragraph_1752553691655_1158489753",
       "id": "paragraph_1752553691655_1158489753",
       "dateCreated": "2025-07-15 04:28:11.655",
-      "dateStarted": "2025-07-16 21:01:17.993",
-      "dateFinished": "2025-07-16 21:01:18.005",
+      "dateStarted": "2025-07-17 17:51:44.663",
+      "dateFinished": "2025-07-17 17:51:44.676",
       "status": "FINISHED"
     },
     {
       "text": "//Columnas tipo String que parecen contener enteros\r\n\r\nimport org.apache.spark.sql.functions._\r\n\r\nval columnasStringSospechosas \u003d dfNacidosClean.schema.fields.collect {\r\n  case StructField(name, StringType, _, _) \u003d\u003e name\r\n}.filter { colName \u003d\u003e\r\n  val total \u003d dfNacidosClean.select(colName).na.drop().count()\r\n  val enterosConvertibles \u003d dfNacidosClean\r\n    .select(colName)\r\n    .na.drop()\r\n    .filter(col(colName).cast(\"long\").isNotNull)\r\n    .count()\r\n  total \u003e 0 \u0026\u0026 enterosConvertibles.toDouble / total \u003e\u003d 0.9\r\n}\r\n\r\nprintln(\" Columnas String que podrían ser enteras:\")\r\ncolumnasStringSospechosas.foreach(c \u003d\u003e println(s\"  - $c\"))\r\n",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:01:18.093",
+      "dateUpdated": "2025-07-17 17:51:44.763",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -1902,14 +1902,14 @@
       "jobName": "paragraph_1752549041923_1288713232",
       "id": "paragraph_1752549041923_1288713232",
       "dateCreated": "2025-07-15 03:10:41.924",
-      "dateStarted": "2025-07-16 21:01:18.097",
-      "dateFinished": "2025-07-16 21:02:37.718",
+      "dateStarted": "2025-07-17 17:51:44.768",
+      "dateFinished": "2025-07-17 17:53:06.752",
       "status": "FINISHED"
     },
     {
       "text": "%md\r\n**Vamos a ver el contenido de cada columna entera del DataFrame dfNacidosClean para**\r\n\r\nMostrar cuántos valores únicos tiene cada columna entera\r\n\r\nMostrar una tabla de frecuencia (conteo de cuántas veces aparece cada valor) ordenada de mayor a menor frecuencia",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:02:37.778",
+      "dateUpdated": "2025-07-17 17:53:06.757",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -1943,14 +1943,14 @@
       "jobName": "paragraph_1752555053497_432597498",
       "id": "paragraph_1752555053497_432597498",
       "dateCreated": "2025-07-15 04:50:53.497",
-      "dateStarted": "2025-07-16 21:02:37.781",
-      "dateFinished": "2025-07-16 21:02:37.786",
+      "dateStarted": "2025-07-17 17:53:06.760",
+      "dateFinished": "2025-07-17 17:53:06.766",
       "status": "FINISHED"
     },
     {
       "text": "// presentar\r\nprintln(\" Valores únicos por columna entera real:\")\r\n\r\ncolumnasEnteras.foreach { colName \u003d\u003e\r\n  val distintos \u003d dfNacidosClean.select(col(colName)).distinct().count()\r\n  println(s\"\\nColumna: $colName — Valores distintos: $distintos\")\r\n  dfNacidosClean.groupBy(col(colName)).count().orderBy(desc(\"count\")).show(false)\r\n}\r\n",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:02:37.881",
+      "dateUpdated": "2025-07-17 17:53:06.860",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -2038,14 +2038,14 @@
       "jobName": "paragraph_1752553253158_10255587",
       "id": "paragraph_1752553253158_10255587",
       "dateCreated": "2025-07-15 04:20:53.159",
-      "dateStarted": "2025-07-16 21:02:37.884",
-      "dateFinished": "2025-07-16 21:02:43.771",
+      "dateStarted": "2025-07-17 17:53:06.866",
+      "dateFinished": "2025-07-17 17:53:13.154",
       "status": "FINISHED"
     },
     {
       "text": "%md\r\n**Ahora mostraremos los datos de las columnas de tipo string que deberian ser numericos**\r\n\r\nnos ayudara a Tomar decisiones sobre si es necesario hacer una limpieza o transformación del dataset y observar las razones por las cuales el programa los tomo como string en ves de numerico \r\n\r\nHay algunas columnas que Estas deberían ser convertidas a tipo entero (IntegerType), pero no la son porque tienen valores diferentes o no validos como \"Sin información\" o vacíos. \r\n\r\nla columna \"peso\" tiene muchos valore distintos seria considerado como un dato continuo\r\n\r\n \r\n\r\n",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:02:43.789",
+      "dateUpdated": "2025-07-17 17:53:13.171",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -2079,14 +2079,14 @@
       "jobName": "paragraph_1752555359128_313377740",
       "id": "paragraph_1752555359128_313377740",
       "dateCreated": "2025-07-15 04:55:59.128",
-      "dateStarted": "2025-07-16 21:02:43.792",
-      "dateFinished": "2025-07-16 21:02:43.798",
+      "dateStarted": "2025-07-17 17:53:13.174",
+      "dateFinished": "2025-07-17 17:53:13.182",
       "status": "FINISHED"
     },
     {
       "text": "// Presentación de las no numéricas\r\nprintln(\"\\nValores únicos por columna String sospechosa:\")\r\n\r\ncolumnasStringSospechosas.foreach { colName \u003d\u003e\r\n  val distintos \u003d dfNacidosClean.select(col(colName)).distinct().count()\r\n  println(s\"\\nColumna: $colName — Valores distintos: $distintos\")\r\n  dfNacidosClean.groupBy(col(colName)).count().orderBy(desc(\"count\")).show(false)\r\n}\r\n",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:02:43.892",
+      "dateUpdated": "2025-07-17 17:53:13.274",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -2354,14 +2354,14 @@
       "jobName": "paragraph_1752554666967_530881550",
       "id": "paragraph_1752554666967_530881550",
       "dateCreated": "2025-07-15 04:44:26.968",
-      "dateStarted": "2025-07-16 21:02:43.896",
-      "dateFinished": "2025-07-16 21:03:11.846",
+      "dateStarted": "2025-07-17 17:53:13.277",
+      "dateFinished": "2025-07-17 17:53:42.494",
       "status": "FINISHED"
     },
     {
       "text": "%md\r\n## TRANFORMAR LAS COLUMNAS A SU TIPO DE DATO CORRESPONDIENTE\r\n\r\nVamos a transformar las columnas que estan como tipo strinf pero son numericas para tener un dataset mas limpio ",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:03:11.923",
+      "dateUpdated": "2025-07-17 17:53:42.504",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -2395,14 +2395,14 @@
       "jobName": "paragraph_1752607102343_559566468",
       "id": "paragraph_1752607102343_559566468",
       "dateCreated": "2025-07-15 19:18:22.343",
-      "dateStarted": "2025-07-16 21:03:11.928",
-      "dateFinished": "2025-07-16 21:03:11.932",
+      "dateStarted": "2025-07-17 17:53:42.507",
+      "dateFinished": "2025-07-17 17:53:42.512",
       "status": "FINISHED"
     },
     {
       "text": "import org.apache.spark.sql.functions._\r\nimport org.apache.spark.sql.types._\r\n\r\n// Definimos una variable donde vamos hacer un map de cada columna y asignamos cada tipo de dato que le corresponde\r\nval columnsConver \u003d Map(\r\n  \"anio_insc\" -\u003e IntegerType,\r\n  \"dia_insc\" -\u003e IntegerType,\r\n  \"talla\" -\u003e IntegerType,\r\n  \"peso\" -\u003e DoubleType,\r\n  \"sem_gest\" -\u003e IntegerType,\r\n  \"apgar1\" -\u003e IntegerType,\r\n  \"apgar5\" -\u003e IntegerType,\r\n  \"anio_mad\" -\u003e IntegerType,\r\n  \"dia_mad\" -\u003e IntegerType,\r\n  \"edad_mad\" -\u003e IntegerType,\r\n  \"con_pren\" -\u003e IntegerType,\r\n  \"num_emb\" -\u003e IntegerType,\r\n  \"num_par\" -\u003e IntegerType,\r\n  \"hij_vivm\" -\u003e IntegerType,\r\n  \"hij_nacm\" -\u003e IntegerType\r\n)\r\n\r\n",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:03:12.028",
+      "dateUpdated": "2025-07-17 17:53:42.607",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -2435,14 +2435,14 @@
       "jobName": "paragraph_1752555136675_1650699455",
       "id": "paragraph_1752555136675_1650699455",
       "dateCreated": "2025-07-15 04:52:16.675",
-      "dateStarted": "2025-07-16 21:03:12.031",
-      "dateFinished": "2025-07-16 21:03:12.291",
+      "dateStarted": "2025-07-17 17:53:42.610",
+      "dateFinished": "2025-07-17 17:53:42.840",
       "status": "FINISHED"
     },
     {
       "text": "// Crea una nueva variable dfConvertido que inicialmente copia el DataFrame original, para ir aplicándole cambios sin afectar al original\r\nvar dfConvertido \u003d dfNacidosClean\r\n\r\n//limpiamos las colummnas de los datos de las columnsConver \r\ncolumnsConver.foreach { case (colName, targetType) \u003d\u003e\r\n  dfConvertido \u003d dfConvertido.withColumn(\r\n    colName,\r\n    when(col(colName).isin(\"Sin información\", \"\"), null)\r\n      .otherwise(col(colName).cast(targetType))\r\n  )\r\n}\r\n\r\n//Mostrar esquema limpio\r\ndfConvertido.printSchema()",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:03:12.331",
+      "dateUpdated": "2025-07-17 17:53:42.910",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -2475,14 +2475,14 @@
       "jobName": "paragraph_1752607541530_1856273612",
       "id": "paragraph_1752607541530_1856273612",
       "dateCreated": "2025-07-15 19:25:41.530",
-      "dateStarted": "2025-07-16 21:03:12.333",
-      "dateFinished": "2025-07-16 21:03:12.777",
+      "dateStarted": "2025-07-17 17:53:42.913",
+      "dateFinished": "2025-07-17 17:53:43.214",
       "status": "FINISHED"
     },
     {
       "text": "%md\r\n## Graficas del dataframe de las columnas de tipo string ",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:03:12.834",
+      "dateUpdated": "2025-07-17 17:53:43.313",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -2517,14 +2517,14 @@
       "jobName": "paragraph_1752601877578_1134751952",
       "id": "paragraph_1752601877578_1134751952",
       "dateCreated": "2025-07-15 17:51:17.579",
-      "dateStarted": "2025-07-16 21:03:12.837",
-      "dateFinished": "2025-07-16 21:03:12.841",
+      "dateStarted": "2025-07-17 17:53:43.316",
+      "dateFinished": "2025-07-17 17:53:43.321",
       "status": "FINISHED"
     },
     {
       "text": "%md\r\n**¿Cuál fue el tipo de parto más frecuente entre los recién nacidos de sexo masculino y femenino?**",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:03:14.241",
+      "dateUpdated": "2025-07-17 17:53:43.416",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -2558,14 +2558,14 @@
       "jobName": "paragraph_1752698557636_1960230647",
       "id": "paragraph_1752698557636_1960230647",
       "dateCreated": "2025-07-16 20:42:37.636",
-      "dateStarted": "2025-07-16 21:03:14.244",
-      "dateFinished": "2025-07-16 21:03:14.249",
+      "dateStarted": "2025-07-17 17:53:43.419",
+      "dateFinished": "2025-07-17 17:53:43.425",
       "status": "FINISHED"
     },
     {
       "text": "z.show(\r\n  dfConvertido\r\n    .groupBy(\"sexo\", \"tipo_part\")\r\n    .count()\r\n    .orderBy($\"count\".desc)\r\n)\r\n",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:03:14.344",
+      "dateUpdated": "2025-07-17 17:53:43.519",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -2662,10 +2662,10 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d288"
+              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d286"
             },
             {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d289"
+              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d287"
             }
           ],
           "interpreterSettingId": "spark"
@@ -2675,14 +2675,14 @@
       "jobName": "paragraph_1752696922234_2029180535",
       "id": "paragraph_1752696922234_2029180535",
       "dateCreated": "2025-07-16 20:15:22.234",
-      "dateStarted": "2025-07-16 21:03:14.347",
-      "dateFinished": "2025-07-16 21:03:15.733",
+      "dateStarted": "2025-07-17 17:53:43.522",
+      "dateFinished": "2025-07-17 17:53:44.793",
       "status": "FINISHED"
     },
     {
       "text": "%md\r\n **CUALES SON LAS 4 PROVINCIAS DONDE HUBIERON MAS inscripciones DE NACIMIENTOS EN EN PAIS**",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:03:15.748",
+      "dateUpdated": "2025-07-17 17:53:44.823",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -2716,14 +2716,14 @@
       "jobName": "paragraph_1752698436234_2109295922",
       "id": "paragraph_1752698436234_2109295922",
       "dateCreated": "2025-07-16 20:40:36.235",
-      "dateStarted": "2025-07-16 21:03:15.754",
-      "dateFinished": "2025-07-16 21:03:15.759",
+      "dateStarted": "2025-07-17 17:53:44.826",
+      "dateFinished": "2025-07-17 17:53:44.830",
       "status": "FINISHED"
     },
     {
       "text": "z.show(\r\n  dfConvertido\r\n    .groupBy(\"prov_insc\")\r\n    .count()\r\n    .orderBy($\"count\".desc)\r\n    .filter(\"count \u003e 10000\")\r\n)\r\n",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:03:15.854",
+      "dateUpdated": "2025-07-17 17:53:44.926",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -2783,10 +2783,10 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d290"
+              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d288"
             },
             {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d291"
+              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d289"
             }
           ],
           "interpreterSettingId": "spark"
@@ -2796,14 +2796,14 @@
       "jobName": "paragraph_1752698314494_483200078",
       "id": "paragraph_1752698314494_483200078",
       "dateCreated": "2025-07-16 20:38:34.494",
-      "dateStarted": "2025-07-16 21:03:15.857",
-      "dateFinished": "2025-07-16 21:03:17.076",
+      "dateStarted": "2025-07-17 17:53:44.928",
+      "dateFinished": "2025-07-17 17:53:46.217",
       "status": "FINISHED"
     },
     {
       "text": "%md\r\n**¿Dónde ocurren más nacimientos?**",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:03:17.158",
+      "dateUpdated": "2025-07-17 17:53:46.231",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -2837,14 +2837,14 @@
       "jobName": "paragraph_1752698898504_386207914",
       "id": "paragraph_1752698898504_386207914",
       "dateCreated": "2025-07-16 20:48:18.504",
-      "dateStarted": "2025-07-16 21:03:17.161",
-      "dateFinished": "2025-07-16 21:03:17.166",
+      "dateStarted": "2025-07-17 17:53:46.234",
+      "dateFinished": "2025-07-17 17:53:46.238",
       "status": "FINISHED"
     },
     {
       "text": "z.show(\r\n  dfConvertido\r\n    .groupBy(\"lugar_ocur\")\r\n    .count()\r\n    .orderBy($\"count\".desc)\r\n)\r\n",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:03:17.261",
+      "dateUpdated": "2025-07-17 17:53:46.334",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -2912,10 +2912,10 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d292"
+              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d290"
             },
             {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d293"
+              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d291"
             }
           ],
           "interpreterSettingId": "spark"
@@ -2925,14 +2925,14 @@
       "jobName": "paragraph_1752698123996_914411589",
       "id": "paragraph_1752698123996_914411589",
       "dateCreated": "2025-07-16 20:35:23.996",
-      "dateStarted": "2025-07-16 21:03:17.264",
-      "dateFinished": "2025-07-16 21:03:18.505",
+      "dateStarted": "2025-07-17 17:53:46.337",
+      "dateFinished": "2025-07-17 17:53:47.564",
       "status": "FINISHED"
     },
     {
       "text": "%md\r\n**Madres adolescentes (edad \u003c 20) por estado civil, ordenado por cantidad de hijos vivos**",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:15:19.719",
+      "dateUpdated": "2025-07-17 17:53:47.638",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -2966,14 +2966,14 @@
       "jobName": "paragraph_1752700507825_965998391",
       "id": "paragraph_1752700507825_965998391",
       "dateCreated": "2025-07-16 21:15:07.825",
-      "dateStarted": "2025-07-16 21:15:19.719",
-      "dateFinished": "2025-07-16 21:15:19.723",
+      "dateStarted": "2025-07-17 17:53:47.640",
+      "dateFinished": "2025-07-17 17:53:47.645",
       "status": "FINISHED"
     },
     {
       "text": "z.show(\r\n  dfConvertido\r\n    .filter($\"edad_mad\" \u003c 20)\r\n    .groupBy(\"est_civil\")\r\n    .agg(\r\n      count(\"*\").alias(\"total_madres\"),\r\n      avg(\"hij_viv\").alias(\"prom_hijos_vivos\")\r\n    )\r\n    .orderBy($\"prom_hijos_vivos\".desc)\r\n)\r\n",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:14:54.441",
+      "dateUpdated": "2025-07-17 17:53:47.740",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -3059,10 +3059,10 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d313"
+              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d292"
             },
             {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d314"
+              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d293"
             }
           ],
           "interpreterSettingId": "spark"
@@ -3072,14 +3072,14 @@
       "jobName": "paragraph_1752698856710_125029920",
       "id": "paragraph_1752698856710_125029920",
       "dateCreated": "2025-07-16 20:47:36.710",
-      "dateStarted": "2025-07-16 21:14:37.383",
-      "dateFinished": "2025-07-16 21:14:38.797",
+      "dateStarted": "2025-07-17 17:53:47.743",
+      "dateFinished": "2025-07-17 17:53:49.094",
       "status": "FINISHED"
     },
     {
       "text": "",
       "user": "anonymous",
-      "dateUpdated": "2025-07-16 21:03:19.869",
+      "dateUpdated": "2025-07-17 17:53:49.144",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -3117,6 +3117,6 @@
     "isZeppelinNotebookCronEnable": false
   },
   "info": {
-    "isRunning": false
+    "isRunning": true
   }
 }
