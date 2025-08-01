@@ -4444,7 +4444,7 @@
       "status": "READY"
     }
   ],
-  "name": "PRO_finalOutliers",
+  "name": "PRO_finalOutliers2",
   "id": "2KYVFUAW3",
   "defaultInterpreterGroup": "spark",
   "version": "0.12.0",
@@ -4454,7 +4454,5 @@
   "config": {
     "isZeppelinNotebookCronEnable": false
   },
-  "info": {
-    "isRunning": false
-  }
+  "info": {}
 }
