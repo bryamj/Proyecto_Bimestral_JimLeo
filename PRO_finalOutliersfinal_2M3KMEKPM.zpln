@@ -1,9 +1,9 @@
 {
   "paragraphs": [
     {
-      "text": "%md\n",
+      "text": " %md\n",
       "user": "anonymous",
-      "dateUpdated": "2025-08-01 18:58:18.407",
+      "dateUpdated": "2025-08-01 20:25:53.272",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -35,14 +35,14 @@
       "jobName": "paragraph_1754068893095_782603141",
       "id": "paragraph_1754068893095_782603141",
       "dateCreated": "2025-08-01 17:21:33.095",
-      "dateStarted": "2025-08-01 18:58:18.422",
-      "dateFinished": "2025-08-01 18:58:20.820",
+      "dateStarted": "2025-08-01 20:25:53.310",
+      "dateFinished": "2025-08-01 20:25:56.123",
       "status": "FINISHED"
     },
     {
       "text": "%md\r\n## PROYECTO FINAL PA\r\n\r\nALEX SANCHEZ\r\n\r\nBRYAM JIMENEZ\r\n\r\n\r\nCSV  de Registros Estadísticos de Nacidos Vivos y Defunciones Fetales",
       "user": "anonymous",
-      "dateUpdated": "2025-08-01 18:58:20.824",
+      "dateUpdated": "2025-08-01 20:25:56.146",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -76,14 +76,14 @@
       "jobName": "paragraph_1754064669237_822108146",
       "id": "paragraph_1752088564211_1846190172",
       "dateCreated": "2025-08-01 16:11:09.237",
-      "dateStarted": "2025-08-01 18:58:20.856",
-      "dateFinished": "2025-08-01 18:58:20.895",
+      "dateStarted": "2025-08-01 20:25:56.181",
+      "dateFinished": "2025-08-01 20:25:56.207",
       "status": "FINISHED"
     },
     {
       "text": "%md\n## CARGA DE DATOS \n\nLECTURA DE DATOS DE Csv ENV_2023.csv",
       "user": "anonymous",
-      "dateUpdated": "2025-08-01 18:58:20.956",
+      "dateUpdated": "2025-08-01 20:25:56.280",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -117,14 +117,14 @@
       "jobName": "paragraph_1754064669237_16667058",
       "id": "paragraph_1752088931405_1186899587",
       "dateCreated": "2025-08-01 16:11:09.237",
-      "dateStarted": "2025-08-01 18:58:20.995",
-      "dateFinished": "2025-08-01 18:58:21.002",
+      "dateStarted": "2025-08-01 20:25:56.319",
+      "dateFinished": "2025-08-01 20:25:56.326",
       "status": "FINISHED"
     },
     {
       "text": "val dfNacidos \u003d spark\n    .read\n    .option(\"header\", true)\n    .option(\"sep\", \";\")\n    .option(\"inferSchema\", true)\n    .csv(\"/workspace/Proyecto_Bimestral_JimLeo/ENV_2023.csv\")\n",
       "user": "anonymous",
-      "dateUpdated": "2025-08-01 18:58:21.095",
+      "dateUpdated": "2025-08-01 20:25:56.419",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -174,14 +174,14 @@
       "jobName": "paragraph_1754064669237_1538375928",
       "id": "paragraph_1752089043726_568972041",
       "dateCreated": "2025-08-01 16:11:09.237",
-      "dateStarted": "2025-08-01 18:58:21.109",
-      "dateFinished": "2025-08-01 18:58:26.111",
+      "dateStarted": "2025-08-01 20:25:56.441",
+      "dateFinished": "2025-08-01 20:26:21.036",
       "status": "FINISHED"
     },
     {
       "text": "%md\r\nCONTAR CANTIDAD DE COLUMNAS Y FILAS DEL CSV",
       "user": "anonymous",
-      "dateUpdated": "2025-08-01 18:58:26.113",
+      "dateUpdated": "2025-08-01 20:26:21.085",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -215,14 +215,14 @@
       "jobName": "paragraph_1754064669237_824535358",
       "id": "paragraph_1752089070438_1074808553",
       "dateCreated": "2025-08-01 16:11:09.237",
-      "dateStarted": "2025-08-01 18:58:26.135",
-      "dateFinished": "2025-08-01 18:58:26.141",
+      "dateStarted": "2025-08-01 20:26:21.100",
+      "dateFinished": "2025-08-01 20:26:21.106",
       "status": "FINISHED"
     },
     {
       "text": "print(s\"Registros (filas): ${dfNacidos.count}, Variables (columnas): ${dfNacidos.columns.length}\")\n",
       "user": "anonymous",
-      "dateUpdated": "2025-08-01 18:58:26.235",
+      "dateUpdated": "2025-08-01 20:26:21.200",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -272,14 +272,14 @@
       "jobName": "paragraph_1754064669237_1628471106",
       "id": "paragraph_1752089145536_22668906",
       "dateCreated": "2025-08-01 16:11:09.237",
-      "dateStarted": "2025-08-01 18:58:26.247",
-      "dateFinished": "2025-08-01 18:58:27.303",
+      "dateStarted": "2025-08-01 20:26:21.215",
+      "dateFinished": "2025-08-01 20:26:22.548",
       "status": "FINISHED"
     },
     {
       "text": "%md\r\n**MOSTRAR EL ESQUEMA DE DE DataFrame dfNacidos**\r\n\r\nMuestra el nombre de cada columna, su tipo de dato (por ejemplo StringType, IntegerType, TimestampType, etc.)\r\ny si permite valores nulos (nullable \u003d true o false).",
       "user": "anonymous",
-      "dateUpdated": "2025-08-01 18:58:27.348",
+      "dateUpdated": "2025-08-01 20:26:22.645",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -313,14 +313,14 @@
       "jobName": "paragraph_1754064669237_1283096163",
       "id": "paragraph_1752089368534_1693585539",
       "dateCreated": "2025-08-01 16:11:09.237",
-      "dateStarted": "2025-08-01 18:58:27.359",
-      "dateFinished": "2025-08-01 18:58:27.367",
+      "dateStarted": "2025-08-01 20:26:22.666",
+      "dateFinished": "2025-08-01 20:26:22.678",
       "status": "FINISHED"
     },
     {
       "text": "dfNacidos.printSchema",
       "user": "anonymous",
-      "dateUpdated": "2025-08-01 18:58:27.459",
+      "dateUpdated": "2025-08-01 20:26:22.766",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -354,14 +354,14 @@
       "jobName": "paragraph_1754064669237_854380101",
       "id": "paragraph_1752089249454_406865264",
       "dateCreated": "2025-08-01 16:11:09.237",
-      "dateStarted": "2025-08-01 18:58:27.471",
-      "dateFinished": "2025-08-01 18:58:27.604",
+      "dateStarted": "2025-08-01 20:26:22.782",
+      "dateFinished": "2025-08-01 20:26:23.001",
       "status": "FINISHED"
     },
     {
       "text": "%md\r\n**USO DE describe para Calcula estadísticas descriptivas de las columnas seleccionadas**\r\n**count:** cuántos valores no nulos hay                              \r\n**mean:** promedio (solo para numéricas)\r\n**stddev:** desviación estándar (solo para numéricas)                \r\n**min:** valor mínimo\r\n**max:** valor máximo",
       "user": "anonymous",
-      "dateUpdated": "2025-08-01 18:58:27.671",
+      "dateUpdated": "2025-08-01 20:26:23.082",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -395,15 +395,15 @@
       "jobName": "paragraph_1754064669237_196923961",
       "id": "paragraph_1752089812171_351039653",
       "dateCreated": "2025-08-01 16:11:09.237",
-      "dateStarted": "2025-08-01 18:58:27.683",
-      "dateFinished": "2025-08-01 18:58:27.690",
+      "dateStarted": "2025-08-01 20:26:23.106",
+      "dateFinished": "2025-08-01 20:26:23.114",
       "status": "FINISHED"
     },
     {
       "text": "dfNacidos\r\n    .select(\"anio_insc\", \"dia_insc\", \"anio_nac\", \"dia_nac\")\r\n    .describe()\r\n    .show",
       "user": "anonymous",
-      "dateUpdated": "2025-08-01 18:58:27.783",
-      "progress": 0,
+      "dateUpdated": "2025-08-01 20:26:23.206",
+      "progress": 100,
       "config": {
         "editorSetting": {
           "language": "scala",
@@ -452,14 +452,14 @@
       "jobName": "paragraph_1754064669237_517068083",
       "id": "paragraph_1752089286120_478739836",
       "dateCreated": "2025-08-01 16:11:09.237",
-      "dateStarted": "2025-08-01 18:58:27.799",
-      "dateFinished": "2025-08-01 18:58:29.966",
+      "dateStarted": "2025-08-01 20:26:23.220",
+      "dateFinished": "2025-08-01 20:26:26.556",
       "status": "FINISHED"
     },
     {
       "text": "%md\r\n**IDENTIFICAR LAS COLUMNAS DE TIPO ENTERO DEL DATAFREME**\r\n\r\ny calcular un resumen estadístico básico ",
       "user": "anonymous",
-      "dateUpdated": "2025-08-01 18:58:30.000",
+      "dateUpdated": "2025-08-01 20:26:26.654",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -493,14 +493,14 @@
       "jobName": "paragraph_1754064669237_2056286999",
       "id": "paragraph_1752090363196_393657003",
       "dateCreated": "2025-08-01 16:11:09.237",
-      "dateStarted": "2025-08-01 18:58:30.013",
-      "dateFinished": "2025-08-01 18:58:30.018",
+      "dateStarted": "2025-08-01 20:26:26.674",
+      "dateFinished": "2025-08-01 20:26:26.680",
       "status": "FINISHED"
     },
     {
       "text": "import org.apache.spark.sql.types._\r\n\r\nval numericCols \u003d dfNacidos.schema.fields.filter{\r\n  case StructField(_, IntegerType | LongType | FloatType | DoubleType | ShortType | DecimalType(), _, _) \u003d\u003e true\r\n  case _ \u003d\u003e false\r\n}.map(_.name)\r\n\r\ndfNacidos.select(numericCols.map(col) : _*).describe().show",
       "user": "anonymous",
-      "dateUpdated": "2025-08-01 18:58:30.112",
+      "dateUpdated": "2025-08-01 20:26:26.774",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -550,14 +550,14 @@
       "jobName": "paragraph_1754064669237_2052063960",
       "id": "paragraph_1752089471820_892259520",
       "dateCreated": "2025-08-01 16:11:09.237",
-      "dateStarted": "2025-08-01 18:58:30.124",
-      "dateFinished": "2025-08-01 18:58:31.825",
+      "dateStarted": "2025-08-01 20:26:26.788",
+      "dateFinished": "2025-08-01 20:26:28.755",
       "status": "FINISHED"
     },
     {
       "text": "%md\r\n**Calcula un resumen estadístico mas ampliado con summary**\r\nEn el summary incluye cuartiles",
       "user": "anonymous",
-      "dateUpdated": "2025-08-01 18:58:31.826",
+      "dateUpdated": "2025-08-01 20:26:28.789",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -591,14 +591,14 @@
       "jobName": "paragraph_1754064669238_1234916433",
       "id": "paragraph_1752090056694_1216663558",
       "dateCreated": "2025-08-01 16:11:09.238",
-      "dateStarted": "2025-08-01 18:58:31.852",
-      "dateFinished": "2025-08-01 18:58:31.858",
+      "dateStarted": "2025-08-01 20:26:28.807",
+      "dateFinished": "2025-08-01 20:26:28.813",
       "status": "FINISHED"
     },
     {
       "text": "dfNacidos.select(numericCols.map(col): _*).summary().show //ssumary permite mostrar cuartiles",
       "user": "anonymous",
-      "dateUpdated": "2025-08-01 18:58:31.952",
+      "dateUpdated": "2025-08-01 20:26:28.907",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -648,14 +648,14 @@
       "jobName": "paragraph_1754064669238_373806412",
       "id": "paragraph_1752090779178_1192134529",
       "dateCreated": "2025-08-01 16:11:09.238",
-      "dateStarted": "2025-08-01 18:58:31.970",
-      "dateFinished": "2025-08-01 18:58:33.974",
+      "dateStarted": "2025-08-01 20:26:28.921",
+      "dateFinished": "2025-08-01 20:26:31.154",
       "status": "FINISHED"
     },
     {
       "text": "%md**DANDOLE A SUMMARY LAS ESTADITICAS QUE QUEREMOS VER**",
       "user": "anonymous",
-      "dateUpdated": "2025-08-01 18:58:34.071",
+      "dateUpdated": "2025-08-01 20:26:31.223",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -690,14 +690,14 @@
       "jobName": "paragraph_1754064669238_1313278398",
       "id": "paragraph_1752090806252_1558490133",
       "dateCreated": "2025-08-01 16:11:09.238",
-      "dateStarted": "2025-08-01 18:58:34.083",
-      "dateFinished": "2025-08-01 18:58:34.088",
+      "dateStarted": "2025-08-01 20:26:31.236",
+      "dateFinished": "2025-08-01 20:26:31.240",
       "status": "FINISHED"
     },
     {
       "text": "dfNacidos.select(numericCols.map(col): _*).summary(\"stddev\", \"25%\").show",
       "user": "anonymous",
-      "dateUpdated": "2025-08-01 18:58:34.183",
+      "dateUpdated": "2025-08-01 20:26:31.336",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -747,15 +747,15 @@
       "jobName": "paragraph_1754064669238_533851389",
       "id": "paragraph_1752091401245_1744613614",
       "dateCreated": "2025-08-01 16:11:09.238",
-      "dateStarted": "2025-08-01 18:58:34.196",
-      "dateFinished": "2025-08-01 18:58:35.736",
+      "dateStarted": "2025-08-01 20:26:31.350",
+      "dateFinished": "2025-08-01 20:26:33.411",
       "status": "FINISHED"
     },
     {
       "text": "dfNacidos.select(numericCols.map(col): _*).summary(\"count\", \"count_distinct\").show",
       "user": "anonymous",
-      "dateUpdated": "2025-08-01 18:58:35.797",
-      "progress": 100,
+      "dateUpdated": "2025-08-01 20:26:33.469",
+      "progress": 0,
       "config": {
         "editorSetting": {
           "language": "scala",
@@ -807,14 +807,14 @@
       "jobName": "paragraph_1754064669238_593783781",
       "id": "paragraph_1752091418038_1862225677",
       "dateCreated": "2025-08-01 16:11:09.238",
-      "dateStarted": "2025-08-01 18:58:35.808",
-      "dateFinished": "2025-08-01 18:58:37.419",
+      "dateStarted": "2025-08-01 20:26:33.490",
+      "dateFinished": "2025-08-01 20:26:35.598",
       "status": "FINISHED"
     },
     {
       "text": "%md\r\n## TRANSFORMACIONES ",
       "user": "anonymous",
-      "dateUpdated": "2025-08-01 18:58:37.510",
+      "dateUpdated": "2025-08-01 20:26:35.601",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -849,14 +849,14 @@
       "jobName": "paragraph_1754064669238_1687003091",
       "id": "paragraph_1752091438655_1897410838",
       "dateCreated": "2025-08-01 16:11:09.238",
-      "dateStarted": "2025-08-01 18:58:37.522",
-      "dateFinished": "2025-08-01 18:58:37.526",
+      "dateStarted": "2025-08-01 20:26:35.637",
+      "dateFinished": "2025-08-01 20:26:35.641",
       "status": "FINISHED"
     },
     {
       "text": "%md\nTranformamos el tipo de dato de la columna fecha_insc que era string a tipo date ",
       "user": "anonymous",
-      "dateUpdated": "2025-08-01 18:58:37.622",
+      "dateUpdated": "2025-08-01 20:26:35.737",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -890,14 +890,14 @@
       "jobName": "paragraph_1754064669238_196545467",
       "id": "paragraph_1752092226856_304717931",
       "dateCreated": "2025-08-01 16:11:09.238",
-      "dateStarted": "2025-08-01 18:58:37.634",
-      "dateFinished": "2025-08-01 18:58:37.638",
+      "dateStarted": "2025-08-01 20:26:35.764",
+      "dateFinished": "2025-08-01 20:26:35.781",
       "status": "FINISHED"
     },
     {
       "text": "val dfNacidosClean \u003d dfNacidos\n    .withColumn(\"fecha_insc_date\", to_date(col(\"fecha_insc\"), \"yyyy/MM/dd\"))\n",
       "user": "anonymous",
-      "dateUpdated": "2025-08-01 18:58:37.733",
+      "dateUpdated": "2025-08-01 20:26:35.860",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -931,14 +931,14 @@
       "jobName": "paragraph_1754064669238_2041940863",
       "id": "paragraph_1752091812882_714593201",
       "dateCreated": "2025-08-01 16:11:09.238",
-      "dateStarted": "2025-08-01 18:58:37.745",
-      "dateFinished": "2025-08-01 18:58:37.885",
+      "dateStarted": "2025-08-01 20:26:35.884",
+      "dateFinished": "2025-08-01 20:26:36.100",
       "status": "FINISHED"
     },
     {
       "text": "dfNacidosClean.printSchema",
       "user": "anonymous",
-      "dateUpdated": "2025-08-01 18:58:37.945",
+      "dateUpdated": "2025-08-01 20:26:36.184",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -972,14 +972,14 @@
       "jobName": "paragraph_1754064669238_780424366",
       "id": "paragraph_1752091913121_1962615345",
       "dateCreated": "2025-08-01 16:11:09.238",
-      "dateStarted": "2025-08-01 18:58:37.956",
-      "dateFinished": "2025-08-01 18:58:38.061",
+      "dateStarted": "2025-08-01 20:26:36.206",
+      "dateFinished": "2025-08-01 20:26:36.404",
       "status": "FINISHED"
     },
     {
       "text": "%md\r\n**análisis estadístico de todas las columnas de tipo fecha**\r\nIdentificación automática de columnas de tipo fecha\r\neneración de expresiones estadísticas para cada columna de fecha\r\n",
       "user": "anonymous",
-      "dateUpdated": "2025-08-01 18:58:38.156",
+      "dateUpdated": "2025-08-01 20:26:36.408",
       "progress": 0,
       "config": {
         "tableHide": true,
@@ -1015,14 +1015,14 @@
       "jobName": "paragraph_1754064669238_246463607",
       "id": "paragraph_1752092825178_985743362",
       "dateCreated": "2025-08-01 16:11:09.238",
-      "dateStarted": "2025-08-01 18:58:38.168",
-      "dateFinished": "2025-08-01 18:58:38.172",
+      "dateStarted": "2025-08-01 20:26:36.460",
+      "dateFinished": "2025-08-01 20:26:36.486",
       "status": "FINISHED"
     },
     {
       "text": "import org.apache.spark.sql.types._\r\nimport org.apache.spark.sql.functions._\r\n\r\n\r\n\r\nval dateColumnNames \u003d dfNacidosClean\r\n    .schema\r\n    .fields\r\n    .filter {\r\n        case StructField(_, TimestampType | DateType,_,_)\u003d\u003e true\r\n        case _ \u003d\u003e false\r\n    }\r\n    .map(_.name)\r\n\r\n// ejemplo \r\n//Generación de expresiones estadísticas para cada columna de fecha\r\nval statsExprs \u003d dateColumnNames\r\n    .flatMap {colName \u003d\u003e\r\n        Seq(\r\n            count(col(colName)).alias(s\"${colName}_count\"),\r\n            min(col(colName)).alias(s\"${colName}_min\"),\r\n            max(col(colName)).alias(s\"${colName}_max\"),\r\n            countDistinct(col(colName)).alias(s\"${colName}_countDistinct\")\r\n        )\r\n    }    \r\n\r\nval dfStatsDateCols \u003d dfNacidosClean\r\n    .select(statsExprs: _*)\r\n\r\ndfStatsDateCols.show()",
       "user": "anonymous",
-      "dateUpdated": "2025-08-01 18:58:38.267",
+      "dateUpdated": "2025-08-01 20:26:36.557",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -1075,14 +1075,14 @@
       "jobName": "paragraph_1754064669238_917636915",
       "id": "paragraph_1752092501859_1681624445",
       "dateCreated": "2025-08-01 16:11:09.238",
-      "dateStarted": "2025-08-01 18:58:38.280",
-      "dateFinished": "2025-08-01 18:58:40.178",
+      "dateStarted": "2025-08-01 20:26:36.591",
+      "dateFinished": "2025-08-01 20:26:39.086",
       "status": "FINISHED"
     },
     {
       "text": "%md\r\n\r\n**Calcular medidas estadísticas para la columna anio_nac del DataFrame dfNacidos**",
       "user": "anonymous",
-      "dateUpdated": "2025-08-01 18:58:40.181",
+      "dateUpdated": "2025-08-01 20:26:39.097",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -1117,14 +1117,14 @@
       "jobName": "paragraph_1754064669238_486312741",
       "id": "paragraph_1752092821310_702208958",
       "dateCreated": "2025-08-01 16:11:09.238",
-      "dateStarted": "2025-08-01 18:58:40.201",
-      "dateFinished": "2025-08-01 18:58:40.206",
+      "dateStarted": "2025-08-01 20:26:39.114",
+      "dateFinished": "2025-08-01 20:26:39.119",
       "status": "FINISHED"
     },
     {
       "text": "dfNacidos.select(\r\n  avg($\"anio_nac\"),\r\n  min($\"anio_nac\"),\r\n  max($\"anio_nac\"),\r\n  stddev($\"anio_nac\"),\r\n  stddev_pop($\"anio_nac\"),\r\n  stddev_samp($\"anio_nac\")\r\n).show(",
       "user": "anonymous",
-      "dateUpdated": "2025-08-01 18:58:40.301",
+      "dateUpdated": "2025-08-01 20:26:39.214",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -1158,14 +1158,14 @@
       "jobName": "paragraph_1754064669238_139413818",
       "id": "paragraph_1752093340802_622024639",
       "dateCreated": "2025-08-01 16:11:09.238",
-      "dateStarted": "2025-08-01 18:58:40.313",
-      "dateFinished": "2025-08-01 18:58:40.324",
+      "dateStarted": "2025-08-01 20:26:39.232",
+      "dateFinished": "2025-08-01 20:26:39.243",
       "status": "FINISHED"
     },
     {
       "text": "%md \r\n## TALLER EN CLASES",
       "user": "anonymous",
-      "dateUpdated": "2025-08-01 18:58:40.413",
+      "dateUpdated": "2025-08-01 20:26:39.332",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -1200,14 +1200,14 @@
       "jobName": "paragraph_1754064669238_436466214",
       "id": "paragraph_1752093369418_1613315767",
       "dateCreated": "2025-08-01 16:11:09.238",
-      "dateStarted": "2025-08-01 18:58:40.425",
-      "dateFinished": "2025-08-01 18:58:40.429",
+      "dateStarted": "2025-08-01 20:26:39.349",
+      "dateFinished": "2025-08-01 20:26:39.362",
       "status": "FINISHED"
     },
     {
       "text": "%md\n**En este codigo vamos a Identificar y mostrar los nombres de todas las columnas del DataFrame dfNacidosClean que esta como datos de tipo entero**\n\nLOS CUALES COMO resultado salen 3 columnas que se encuentran como enteros.\n",
       "user": "anonymous",
-      "dateUpdated": "2025-08-01 18:58:40.525",
+      "dateUpdated": "2025-08-01 20:26:39.448",
       "progress": 0,
       "config": {
         "tableHide": true,
@@ -1243,14 +1243,14 @@
       "jobName": "paragraph_1754064669238_267661307",
       "id": "paragraph_1752553112213_1905831830",
       "dateCreated": "2025-08-01 16:11:09.238",
-      "dateStarted": "2025-08-01 18:58:40.540",
-      "dateFinished": "2025-08-01 18:58:40.546",
+      "dateStarted": "2025-08-01 20:26:39.488",
+      "dateFinished": "2025-08-01 20:26:39.495",
       "status": "FINISHED"
     },
     {
       "text": "// Columnas enteras correctamente tipadas\nimport org.apache.spark.sql.types._\n\nval columnasEnteras \u003d dfNacidosClean.schema.fields.collect {\n  case StructField(name, IntegerType | LongType | ShortType, _, _) \u003d\u003e name\n}\n\nprintln(\" Columnas enteras reales \")\ncolumnasEnteras.foreach(c \u003d\u003e println(s\"  - $c\"))\n",
       "user": "anonymous",
-      "dateUpdated": "2025-08-01 18:58:40.640",
+      "dateUpdated": "2025-08-01 20:26:39.588",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -1284,14 +1284,14 @@
       "jobName": "paragraph_1754064669238_952332134",
       "id": "paragraph_1752549025451_2087471742",
       "dateCreated": "2025-08-01 16:11:09.238",
-      "dateStarted": "2025-08-01 18:58:40.652",
-      "dateFinished": "2025-08-01 18:58:40.886",
+      "dateStarted": "2025-08-01 20:26:39.602",
+      "dateFinished": "2025-08-01 20:26:40.034",
       "status": "FINISHED"
     },
     {
       "text": "%md\r\n**Este código vamos a buscar columnas que están definidas como texto (StringType), pero que probablemente contienen números enteros, es decir\r\n valores que debian estar como tipo entero pero por alguna razon no lo estan**\r\n \r\n Nos dan como resultado que hay 15 columnas encotradas",
       "user": "anonymous",
-      "dateUpdated": "2025-08-01 18:58:40.952",
+      "dateUpdated": "2025-08-01 20:26:40.102",
       "progress": 0,
       "config": {
         "tableHide": true,
@@ -1327,14 +1327,14 @@
       "jobName": "paragraph_1754064669238_1531375376",
       "id": "paragraph_1752553691655_1158489753",
       "dateCreated": "2025-08-01 16:11:09.238",
-      "dateStarted": "2025-08-01 18:58:40.964",
-      "dateFinished": "2025-08-01 18:58:40.974",
+      "dateStarted": "2025-08-01 20:26:40.116",
+      "dateFinished": "2025-08-01 20:26:40.128",
       "status": "FINISHED"
     },
     {
       "text": "//Columnas tipo String que parecen contener enteros\r\n\r\nimport org.apache.spark.sql.functions._\r\n\r\nval columnasStringSospechosas \u003d dfNacidosClean.schema.fields.collect {\r\n  case StructField(name, StringType, _, _) \u003d\u003e name\r\n}.filter { colName \u003d\u003e\r\n  val total \u003d dfNacidosClean.select(colName).na.drop().count()\r\n  val enterosConvertibles \u003d dfNacidosClean\r\n    .select(colName)\r\n    .na.drop()\r\n    .filter(col(colName).cast(\"long\").isNotNull)\r\n    .count()\r\n  total \u003e 0 \u0026\u0026 enterosConvertibles.toDouble / total \u003e\u003d 0.9\r\n}\r\n\r\nprintln(\" Columnas String que podrían ser enteras:\")\r\ncolumnasStringSospechosas.foreach(c \u003d\u003e println(s\"  - $c\"))\r\n",
       "user": "anonymous",
-      "dateUpdated": "2025-08-01 18:58:41.064",
+      "dateUpdated": "2025-08-01 20:26:40.217",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -1352,15 +1352,6 @@
       "settings": {
         "params": {},
         "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": " Columnas String que podrían ser enteras:\n  - anio_insc\n  - dia_insc\n  - talla\n  - peso\n  - sem_gest\n  - apgar1\n  - apgar5\n  - anio_mad\n  - dia_mad\n  - edad_mad\n  - con_pren\n  - num_emb\n  - num_par\n  - hij_vivm\n  - hij_nacm\nimport org.apache.spark.sql.functions._\n\u001b[1m\u001b[34mcolumnasStringSospechosas\u001b[0m: \u001b[1m\u001b[32mArray[String]\u001b[0m \u003d Array(anio_insc, dia_insc, talla, peso, sem_gest, apgar1, apgar5, anio_mad, dia_mad, edad_mad, con_pren, num_emb, num_par, hij_vivm, hij_nacm)\n"
-          }
-        ]
       },
       "apps": [],
       "runtimeInfos": {
@@ -1492,411 +1483,6 @@
             },
             {
               "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d58"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d59"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d60"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d61"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d62"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d63"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d64"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d65"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d66"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d67"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d68"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d69"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d70"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d71"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d72"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d73"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d74"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d75"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d76"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d77"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d78"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d79"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d80"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d81"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d82"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d83"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d84"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d85"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d86"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d87"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d88"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d89"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d90"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d91"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d92"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d93"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d94"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d95"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d96"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d97"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d98"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d99"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d100"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d101"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d102"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d103"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d104"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d105"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d106"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d107"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d108"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d109"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d110"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d111"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d112"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d113"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d114"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d115"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d116"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d117"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d118"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d119"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d120"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d121"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d122"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d123"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d124"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d125"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d126"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d127"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d128"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d129"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d130"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d131"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d132"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d133"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d134"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d135"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d136"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d137"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d138"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d139"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d140"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d141"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d142"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d143"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d144"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d145"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d146"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d147"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d148"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d149"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d150"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d151"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d152"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d153"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d154"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d155"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d156"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d157"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d158"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d159"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d160"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d161"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d162"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d163"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d164"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d165"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d166"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d167"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d168"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d169"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d170"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d171"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d172"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d173"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d174"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d175"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d176"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d177"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d178"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d179"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d180"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d181"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d182"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d183"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d184"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d185"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d186"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d187"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d188"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d189"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d190"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d191"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d192"
-            },
-            {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d193"
             }
           ],
           "interpreterSettingId": "spark"
@@ -1906,9 +1492,9 @@
       "jobName": "paragraph_1754064669238_536342744",
       "id": "paragraph_1752549041923_1288713232",
       "dateCreated": "2025-08-01 16:11:09.238",
-      "dateStarted": "2025-08-01 18:58:41.076",
+      "dateStarted": "2025-08-01 20:26:40.236",
       "dateFinished": "2025-08-01 19:00:02.019",
-      "status": "FINISHED"
+      "status": "RUNNING"
     },
     {
       "text": "%md\r\n**Vamos a ver el contenido de cada columna entera del DataFrame dfNacidosClean para**\r\n\r\nMostrar cuántos valores únicos tiene cada columna entera\r\n\r\nMostrar una tabla de frecuencia (conteo de cuántas veces aparece cada valor) ordenada de mayor a menor frecuencia",
@@ -6064,7 +5650,7 @@
       "status": "FINISHED"
     }
   ],
-  "name": "PRO_finalOutliers",
+  "name": "PRO_finalOutliersfinal",
   "id": "2M3KMEKPM",
   "defaultInterpreterGroup": "spark",
   "version": "0.12.0",
@@ -6075,6 +5661,6 @@
     "isZeppelinNotebookCronEnable": false
   },
   "info": {
-    "isRunning": false
+    "isRunning": true
   }
 }

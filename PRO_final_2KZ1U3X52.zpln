@@ -124,7 +124,7 @@
     {
       "text": "val dfNacidos \u003d spark\n    .read\n    .option(\"header\", true)\n    .option(\"sep\", \";\")\n    .option(\"inferSchema\", true)\n    .csv(\"/workspace/Proyecto_Bimestral_JimLeo/ENV_2023.csv\")",
       "user": "anonymous",
-      "dateUpdated": "2025-07-17 17:51:05.196",
+      "dateUpdated": "2025-07-29 23:50:54.367",
       "progress": 100,
       "config": {
         "colWidth": 12.0,
@@ -160,10 +160,10 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d0"
+              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d3"
             },
             {
-              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d1"
+              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d4"
             }
           ],
           "interpreterSettingId": "spark"
@@ -173,8 +173,56 @@
       "jobName": "paragraph_1752543941012_1889884383",
       "id": "paragraph_1752089043726_568972041",
       "dateCreated": "2025-07-15 01:45:41.012",
-      "dateStarted": "2025-07-17 17:51:05.202",
-      "dateFinished": "2025-07-17 17:51:25.950",
+      "dateStarted": "2025-07-29 23:50:54.370",
+      "dateFinished": "2025-07-29 23:50:55.874",
+      "status": "FINISHED"
+    },
+    {
+      "text": "dfNacidos.show",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-29 23:48:05.278",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {}
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+--------------------+--------------------+--------------------+----------+---------+----------+--------+------+----------+--------+----------+-------+---------------+---------------+---------------+---------+--------------------+---------------+---------------+------+--------------------+--------------------+--------------------+--------+--------------------+-----------+--------+----------+--------+---------+-------+--------+---------------+-------+-------+-------+---------------+---------------+---------------+---------+----------------+---------------+--------------------+--------------------+--------------------+--------+------------+\n|           prov_insc|           cant_insc|           parr_insc|fecha_insc|anio_insc|  mes_insc|dia_insc|  sexo| fecha_nac|anio_nac|   mes_nac|dia_nac|          talla|           peso|       sem_gest|tipo_part|          lugar_ocur|         apgar1|         apgar5| p_emb|            prov_nac|            cant_nac|            parr_nac|area_nac|            asis_por|    nac_mad|cod_pais| fecha_mad|anio_mad|  mes_mad|dia_mad|edad_mad|       con_pren|num_emb|num_par|hij_viv|       hij_vivm|       hij_nacm|          etnia|est_civil|        niv_inst|      sabe_leer|            prov_res|            cant_res|            parr_res|area_res|   residente|\n+--------------------+--------------------+--------------------+----------+---------+----------+--------+------+----------+--------+----------+-------+---------------+---------------+---------------+---------+--------------------+---------------+---------------+------+--------------------+--------------------+--------------------+--------+--------------------+-----------+--------+----------+--------+---------+-------+--------+---------------+-------+-------+-------+---------------+---------------+---------------+---------+----------------+---------------+--------------------+--------------------+--------------------+--------+------------+\n|              Guayas|           Guayaquil|          Rocafuerte|2023/04/04|     2023|     Abril|       4| Mujer|2005/09/27|    2005|Septiembre|     27|             49|           2600|             40|  Cesárea|Establecimiento d...|              8|              9|Simple|              Guayas|           Guayaquil|              Tarqui|  Urbana|            Médico/a|Ecuatoriana| Ecuador|1991/05/11|    1991|     Mayo|     11|      14|              8|      1|      1|      1|Sin información|Sin información|        Mestiza|  Soltera|      Secundaria|             Si|              Guayas|           Guayaquil|              Tarqui|  Urbana|   Residente|\n|              Guayas|           Guayaquil|          Rocafuerte|2023/05/03|     2023|      Mayo|       3| Mujer|2006/02/13|    2006|   Febrero|     13|Sin información|Sin información|Sin información|   Normal|                Casa|Sin información|Sin información|Simple|              Guayas|           Guayaquil|              Ximena|  Urbana|Partero/a no cali...|Ecuatoriana| Ecuador|1993/10/10|    1993|  Octubre|     10|      12|              0|      1|      1|      1|              0|              0|        Mestiza|  Soltera|Educación Básica|             Si|              Guayas|           Guayaquil|              Ximena|  Urbana|   Residente|\n|              Guayas|           Guayaquil|          Rocafuerte|2023/05/03|     2023|      Mayo|       3| Mujer|2007/03/15|    2007|     Marzo|     15|Sin información|Sin información|Sin información|   Normal|                Casa|Sin información|Sin información|Simple|              Guayas|           Guayaquil|              Ximena|  Urbana|                Otro|Ecuatoriana| Ecuador|1993/10/10|    1993|  Octubre|     10|      13|              0|      2|      2|      2|              0|              0|        Mestiza|  Soltera|Educación Básica|             Si|              Guayas|           Guayaquil|              Ximena|  Urbana|   Residente|\n|              Guayas|             Milagro|Milagro, cabecera...|2023/12/04|     2023| Diciembre|       4| Mujer|2007/03/11|    2007|     Marzo|     11|             38|           3808|             40|   Normal|                Casa|             10|             10|Simple|              Guayas|             Milagro|Milagro, cabecera...|  Urbana|            Médico/a|Ecuatoriana| Ecuador|1994/03/22|    1994|    Marzo|     22|      12|             10|      1|      1|      1|              0|              0|        Mestiza|    Unida|Educación Básica|             Si|              Guayas|             Milagro|Milagro, cabecera...|  Urbana|   Residente|\n|          Tungurahua|              Ambato|        Huachi Chico|2023/07/13|     2023|     Julio|      13|Hombre|2008/04/21|    2008|     Abril|     21|Sin información|Sin información|Sin información|   Normal|                Casa|Sin información|Sin información|Simple|           Sucumbíos|            Putumayo|Puerto El Carmen ...|  Urbana|Partero/a no cali...|Ecuatoriana| Ecuador|1994/07/06|    1994|    Julio|      6|      13|              0|      1|      1|      1|              0|              0|        Mestiza|  Soltera|Educación Básica|             Si|           Sucumbíos|            Putumayo|Puerto El Carmen ...|  Urbana|   Residente|\n|          Esmeraldas|         San Lorenzo|San Lorenzo, cabe...|2023/02/16|     2023|   Febrero|      16|Hombre|2009/04/11|    2009|     Abril|     11|Sin información|Sin información|Sin información|   Normal|                Casa|Sin información|Sin información|Simple|          Esmeraldas|         San Lorenzo|San Lorenzo, cabe...|  Urbana|Partero/a calific...| Extranjera|Colombia|1994/12/08|    1994|Diciembre|      8|      14|              0|      1|      1|      1|              0|              0|          Negra|  Soltera|Educación Básica|             Si|          Esmeraldas|         San Lorenzo|San Lorenzo, cabe...|  Urbana|   Residente|\n|          Esmeraldas|          Esmeraldas|          Esmeraldas|2023/04/12|     2023|     Abril|      12|Hombre|2010/05/28|    2010|      Mayo|     28|             52|           3000|             38|   Normal|Establecimiento d...|              8|              9|Simple|          Esmeraldas|         Eloy Alfaro|              Borbon|   Rural|            Médico/a|Ecuatoriana| Ecuador|1995/07/10|    1995|    Julio|     10|      14|              3|      1|      1|      1|              0|              0|          Negra|    Unida|Educación Básica|             Si|          Esmeraldas|         Eloy Alfaro|              Borbon|   Rural|   Residente|\n|              Guayas|           Guayaquil|          Rocafuerte|2023/09/19|     2023|Septiembre|      19|Hombre|2010/10/31|    2010|   Octubre|     31|             48|           2799|             40|   Normal|Establecimiento d...|              8|              9|Simple|              Guayas|           Guayaquil|              Tarqui|  Urbana|            Médico/a|Ecuatoriana| Ecuador|1996/06/30|    1996|    Junio|     30|      14|Sin información|      1|      1|      1|              0|              0|Sin información|  Soltera|Educación Básica|Sin información|              Guayas|           Guayaquil|  Bolívar (Sagrario)|  Urbana|No residente|\n|     Morona Santiago|              Palora|Palora (Metzera),...|2023/04/24|     2023|     Abril|      24| Mujer|2011/06/06|    2011|     Junio|      6|Sin información|Sin información|Sin información|   Normal|                Casa|Sin información|Sin información|Simple|          Esmeraldas|            Quinindé|Rosa Zárate (Quin...|  Urbana|Partero/a no cali...|Ecuatoriana| Ecuador|1996/11/23|    1996|Noviembre|     23|      14|Sin información|      1|      1|      1|              0|              0|       Indígena|  Soltera|Educación Básica|             Si|     Morona Santiago|              Palora|            Arapicos|   Rural|No residente|\n|Santo Domingo de ...|       Santo Domingo|Santo Domingo de ...|2023/04/20|     2023|     Abril|      20| Mujer|2008/12/07|    2008| Diciembre|      7|Sin información|Sin información|Sin información|   Normal|                Casa|Sin información|Sin información|Simple|Santo Domingo de ...|       Santo Domingo| San Jacinto del Búa|   Rural|Partero/a no cali...|Ecuatoriana| Ecuador|1997/06/05|    1997|    Junio|      5|      11|              0|      1|      1|      1|              0|              0|        Mestiza|  Soltera|Educación Básica|             Si|Santo Domingo de ...|       Santo Domingo| San Jacinto del Búa|   Rural|   Residente|\n|Santo Domingo de ...|       Santo Domingo|Santo Domingo de ...|2023/04/20|     2023|     Abril|      20| Mujer|2010/03/25|    2010|     Marzo|     25|Sin información|Sin información|Sin información|   Normal|                Casa|Sin información|Sin información|Simple|Santo Domingo de ...|       Santo Domingo| San Jacinto del Búa|   Rural|Partero/a no cali...|Ecuatoriana| Ecuador|1997/06/05|    1997|    Junio|      5|      12|              0|      2|      2|      2|              0|              0|        Mestiza|  Soltera|Educación Básica|             Si|Santo Domingo de ...|       Santo Domingo| San Jacinto del Búa|   Rural|   Residente|\n|Santo Domingo de ...|       Santo Domingo|Santo Domingo de ...|2023/11/15|     2023| Noviembre|      15| Mujer|2013/01/20|    2013|     Enero|     20|Sin información|Sin información|Sin información|   Normal|                Casa|Sin información|Sin información|Simple|          Esmeraldas|            Quinindé|Rosa Zárate (Quin...|  Urbana|                Otro|Ecuatoriana| Ecuador|1998/11/23|    1998|Noviembre|     23|      14|              0|      1|      1|      1|              0|              0|        Mestiza|  Soltera|         Ninguno|             No|          Esmeraldas|            Quinindé|Rosa Zárate (Quin...|  Urbana|   Residente|\n|Santo Domingo de ...|       Santo Domingo|Santo Domingo de ...|2023/03/27|     2023|     Marzo|      27|Hombre|2013/07/21|    2013|     Julio|     21|             48|           2600|             40|   Normal|Establecimiento d...|              6|              8|Simple|Santo Domingo de ...|       Santo Domingo|             Zaracay|  Urbana|            Médico/a|Ecuatoriana| Ecuador|1999/07/17|    1999|    Julio|     17|      14|              1|      3|      3|      3|              0|              0|        Mestiza|  Soltera|Educación Básica|             Si|            Los Ríos|            Buena Fe|San Jacinto de Bu...|  Urbana|No residente|\n|              Guayas|           Guayaquil|          Rocafuerte|2023/04/11|     2023|     Abril|      11| Mujer|2014/03/20|    2014|     Marzo|     20|Sin información|Sin información|Sin información|   Normal|                Casa|Sin información|Sin información|Simple|              Guayas|           Guayaquil|              Tarqui|  Urbana|                Otro|Ecuatoriana| Ecuador|1999/08/01|    1999|   Agosto|      1|      14|              0|      1|      1|      1|              0|              0|        Mestiza|  Soltera|Educación Básica|             Si|              Guayas|           Guayaquil|              Tarqui|  Urbana|   Residente|\n|Santo Domingo de ...|       Santo Domingo|Santo Domingo de ...|2023/08/31|     2023|    Agosto|      31| Mujer|2014/12/18|    2014| Diciembre|     18|Sin información|Sin información|Sin información|   Normal|                Casa|Sin información|Sin información|Simple|Santo Domingo de ...|       Santo Domingo|          Alluriquín|   Rural|Partero/a no cali...|Ecuatoriana| Ecuador|1999/12/31|    1999|Diciembre|     31|      14|              3|      1|      1|      1|              0|              0|        Mestiza|  Soltera|Educación Básica|             Si|Santo Domingo de ...|       Santo Domingo|          Alluriquín|   Rural|   Residente|\n|           Pichincha|San Miguel de los...|San Miguel de los...|2023/02/14|     2023|   Febrero|      14|Hombre|2015/01/15|    2015|     Enero|     15|             48|           3350|             38|   Normal|Establecimiento d...|              8|              9|Simple|           Pichincha|Pedro Vicente Mal...|Pedro Vicente Mal...|  Urbana|  Obstetriz/Obstetra|Ecuatoriana| Ecuador|2000/04/28|    2000|    Abril|     28|      14|              3|      1|      1|      1|              0|              0|         Mulata|    Unida|Educación Básica|             Si|           Pichincha|San Miguel de los...|San Miguel de los...|  Urbana|No residente|\n|              Guayas|               Daule|               Daule|2023/05/19|     2023|      Mayo|      19|Hombre|2013/12/03|    2013| Diciembre|      3|             50|           2900|             41|  Cesárea|Establecimiento d...|              8|              9|Simple|              Guayas|           Guayaquil|              Tarqui|  Urbana|            Médico/a|Ecuatoriana| Ecuador|2000/10/28|    2000|  Octubre|     28|      13|              2|      1|      1|      1|              0|              0|        Mestiza|    Unida|Educación Básica|             Si|              Guayas|           Guayaquil|  Bolívar (Sagrario)|  Urbana|No residente|\n|          Esmeraldas|         San Lorenzo|San Lorenzo, cabe...|2023/01/27|     2023|     Enero|      27| Mujer|2015/11/18|    2015| Noviembre|     18|             52|           2880|             39|   Normal|Establecimiento d...|              9|             10|Simple|          Esmeraldas|         San Lorenzo|San Lorenzo, cabe...|  Urbana|  Obstetriz/Obstetra|Ecuatoriana| Ecuador|2000/12/23|    2000|Diciembre|     23|      14|              7|      1|      1|      1|              0|              0|          Negra|  Soltera|Educación Básica|Sin información|          Esmeraldas|         San Lorenzo|San Lorenzo, cabe...|  Urbana|   Residente|\n|              Manabí|          Portoviejo|       18 de Octubre|2023/05/09|     2023|      Mayo|       9| Mujer|2015/08/17|    2015|    Agosto|     17|Sin información|Sin información|Sin información|   Normal|                Casa|Sin información|Sin información|Simple|              Manabí|          Portoviejo|      Andrés de Vera|  Urbana|                Otro|Ecuatoriana| Ecuador|2000/12/24|    2000|Diciembre|     24|      14|Sin información|      3|      3|      3|              1|Sin información|        Mestiza|  Soltera|Educación Básica|             Si|              Manabí|          Portoviejo|      Andrés de Vera|  Urbana|   Residente|\n|Santo Domingo de ...|       Santo Domingo|Santo Domingo de ...|2023/01/12|     2023|     Enero|      12| Mujer|2015/03/06|    2015|     Marzo|      6|             48|           3050|             39|  Cesárea|Establecimiento d...|              8|              9|Simple|Santo Domingo de ...|       Santo Domingo|             Zaracay|  Urbana|            Médico/a|Ecuatoriana| Ecuador|2001/04/08|    2001|    Abril|      8|      13|              3|      1|      1|      1|              0|              0|        Mestiza|  Soltera|Educación Básica|             Si|          Esmeraldas|          Esmeraldas|          Esmeraldas|  Urbana|No residente|\n+--------------------+--------------------+--------------------+----------+---------+----------+--------+------+----------+--------+----------+-------+---------------+---------------+---------------+---------+--------------------+---------------+---------------+------+--------------------+--------------------+--------------------+--------+--------------------+-----------+--------+----------+--------+---------+-------+--------+---------------+-------+-------+-------+---------------+---------------+---------------+---------+----------------+---------------+--------------------+--------------------+--------------------+--------+------------+\nonly showing top 20 rows\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://10.0.5.2:4040/jobs/job?id\u003d2"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1753832874179_1295476492",
+      "id": "paragraph_1753832874179_1295476492",
+      "dateCreated": "2025-07-29 23:47:54.179",
+      "dateStarted": "2025-07-29 23:48:05.282",
+      "dateFinished": "2025-07-29 23:48:06.005",
       "status": "FINISHED"
     },
     {
@@ -846,12 +894,12 @@
       "status": "FINISHED"
     },
     {
-      "text": "%md\nTranformamos el tipo de dato de la columna fecha_insc que era string a tipo date ",
+      "text": "%md\nTranformamos el tipo de dato de la columna fecha_insc, fecha_nac que era string a tipo date ",
       "user": "anonymous",
-      "dateUpdated": "2025-07-17 17:51:39.815",
+      "dateUpdated": "2025-07-29 23:54:55.968",
       "progress": 0,
       "config": {
-        "tableHide": false,
+        "tableHide": true,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true,
@@ -859,7 +907,7 @@
         },
         "colWidth": 12.0,
         "fontSize": 9.0,
-        "editorHide": true,
+        "editorHide": false,
         "results": {},
         "enabled": true
       },
@@ -887,9 +935,9 @@
       "status": "FINISHED"
     },
     {
-      "text": "val dfNacidosClean \u003d dfNacidos\n    .withColumn(\"fecha_insc_date\", to_date(col(\"fecha_insc\"), \"yyyy/MM/dd\"))\n",
+      "text": "val dfNacidosClean \u003d dfNacidos\n    .withColumn(\"fecha_insc_date\", to_date(col(\"fecha_insc\"), \"yyyy/MM/dd\"))\n    .withColumn(\"fecha_nac_date\", to_date(col(\"fecha_nac\"), \"yyyy/MM/dd\"))\n    .withColumn(\"fecha_mad_date\", to_date(col(\"fecha_mad\"), \"yyyy/MM/dd\"))\n\n",
       "user": "anonymous",
-      "dateUpdated": "2025-07-17 17:51:39.918",
+      "dateUpdated": "2025-07-29 23:52:33.500",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -912,7 +960,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "\u001b[1m\u001b[34mdfNacidosClean\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m \u003d [prov_insc: string, cant_insc: string ... 46 more fields]\n"
+            "data": "\u001b[1m\u001b[34mdfNacidosClean\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m \u003d [prov_insc: string, cant_insc: string ... 48 more fields]\n"
           }
         ]
       },
@@ -922,14 +970,38 @@
       "jobName": "paragraph_1752543941015_1280483432",
       "id": "paragraph_1752091812882_714593201",
       "dateCreated": "2025-07-15 01:45:41.015",
-      "dateStarted": "2025-07-17 17:51:39.922",
-      "dateFinished": "2025-07-17 17:51:40.131",
+      "dateStarted": "2025-07-29 23:52:33.503",
+      "dateFinished": "2025-07-29 23:52:33.679",
       "status": "FINISHED"
+    },
+    {
+      "text": "",
+      "user": "anonymous",
+      "dateUpdated": "2025-07-29 23:49:35.373",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {}
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1753832946892_1961642079",
+      "id": "paragraph_1753832946892_1961642079",
+      "dateCreated": "2025-07-29 23:49:06.892",
+      "status": "READY"
     },
     {
       "text": "dfNacidosClean.printSchema",
       "user": "anonymous",
-      "dateUpdated": "2025-07-17 17:51:40.222",
+      "dateUpdated": "2025-07-29 23:52:36.454",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -952,7 +1024,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "root\n |-- prov_insc: string (nullable \u003d true)\n |-- cant_insc: string (nullable \u003d true)\n |-- parr_insc: string (nullable \u003d true)\n |-- fecha_insc: string (nullable \u003d true)\n |-- anio_insc: string (nullable \u003d true)\n |-- mes_insc: string (nullable \u003d true)\n |-- dia_insc: string (nullable \u003d true)\n |-- sexo: string (nullable \u003d true)\n |-- fecha_nac: string (nullable \u003d true)\n |-- anio_nac: integer (nullable \u003d true)\n |-- mes_nac: string (nullable \u003d true)\n |-- dia_nac: integer (nullable \u003d true)\n |-- talla: string (nullable \u003d true)\n |-- peso: string (nullable \u003d true)\n |-- sem_gest: string (nullable \u003d true)\n |-- tipo_part: string (nullable \u003d true)\n |-- lugar_ocur: string (nullable \u003d true)\n |-- apgar1: string (nullable \u003d true)\n |-- apgar5: string (nullable \u003d true)\n |-- p_emb: string (nullable \u003d true)\n |-- prov_nac: string (nullable \u003d true)\n |-- cant_nac: string (nullable \u003d true)\n |-- parr_nac: string (nullable \u003d true)\n |-- area_nac: string (nullable \u003d true)\n |-- asis_por: string (nullable \u003d true)\n |-- nac_mad: string (nullable \u003d true)\n |-- cod_pais: string (nullable \u003d true)\n |-- fecha_mad: string (nullable \u003d true)\n |-- anio_mad: string (nullable \u003d true)\n |-- mes_mad: string (nullable \u003d true)\n |-- dia_mad: string (nullable \u003d true)\n |-- edad_mad: string (nullable \u003d true)\n |-- con_pren: string (nullable \u003d true)\n |-- num_emb: string (nullable \u003d true)\n |-- num_par: string (nullable \u003d true)\n |-- hij_viv: integer (nullable \u003d true)\n |-- hij_vivm: string (nullable \u003d true)\n |-- hij_nacm: string (nullable \u003d true)\n |-- etnia: string (nullable \u003d true)\n |-- est_civil: string (nullable \u003d true)\n |-- niv_inst: string (nullable \u003d true)\n |-- sabe_leer: string (nullable \u003d true)\n |-- prov_res: string (nullable \u003d true)\n |-- cant_res: string (nullable \u003d true)\n |-- parr_res: string (nullable \u003d true)\n |-- area_res: string (nullable \u003d true)\n |-- residente: string (nullable \u003d true)\n |-- fecha_insc_date: date (nullable \u003d true)\n\n"
+            "data": "root\n |-- prov_insc: string (nullable \u003d true)\n |-- cant_insc: string (nullable \u003d true)\n |-- parr_insc: string (nullable \u003d true)\n |-- fecha_insc: string (nullable \u003d true)\n |-- anio_insc: string (nullable \u003d true)\n |-- mes_insc: string (nullable \u003d true)\n |-- dia_insc: string (nullable \u003d true)\n |-- sexo: string (nullable \u003d true)\n |-- fecha_nac: string (nullable \u003d true)\n |-- anio_nac: integer (nullable \u003d true)\n |-- mes_nac: string (nullable \u003d true)\n |-- dia_nac: integer (nullable \u003d true)\n |-- talla: string (nullable \u003d true)\n |-- peso: string (nullable \u003d true)\n |-- sem_gest: string (nullable \u003d true)\n |-- tipo_part: string (nullable \u003d true)\n |-- lugar_ocur: string (nullable \u003d true)\n |-- apgar1: string (nullable \u003d true)\n |-- apgar5: string (nullable \u003d true)\n |-- p_emb: string (nullable \u003d true)\n |-- prov_nac: string (nullable \u003d true)\n |-- cant_nac: string (nullable \u003d true)\n |-- parr_nac: string (nullable \u003d true)\n |-- area_nac: string (nullable \u003d true)\n |-- asis_por: string (nullable \u003d true)\n |-- nac_mad: string (nullable \u003d true)\n |-- cod_pais: string (nullable \u003d true)\n |-- fecha_mad: string (nullable \u003d true)\n |-- anio_mad: string (nullable \u003d true)\n |-- mes_mad: string (nullable \u003d true)\n |-- dia_mad: string (nullable \u003d true)\n |-- edad_mad: string (nullable \u003d true)\n |-- con_pren: string (nullable \u003d true)\n |-- num_emb: string (nullable \u003d true)\n |-- num_par: string (nullable \u003d true)\n |-- hij_viv: integer (nullable \u003d true)\n |-- hij_vivm: string (nullable \u003d true)\n |-- hij_nacm: string (nullable \u003d true)\n |-- etnia: string (nullable \u003d true)\n |-- est_civil: string (nullable \u003d true)\n |-- niv_inst: string (nullable \u003d true)\n |-- sabe_leer: string (nullable \u003d true)\n |-- prov_res: string (nullable \u003d true)\n |-- cant_res: string (nullable \u003d true)\n |-- parr_res: string (nullable \u003d true)\n |-- area_res: string (nullable \u003d true)\n |-- residente: string (nullable \u003d true)\n |-- fecha_insc_date: date (nullable \u003d true)\n |-- fecha_nac_date: date (nullable \u003d true)\n |-- fecha_mad_date: date (nullable \u003d true)\n\n"
           }
         ]
       },
@@ -962,8 +1034,8 @@
       "jobName": "paragraph_1752543941015_531892151",
       "id": "paragraph_1752091913121_1962615345",
       "dateCreated": "2025-07-15 01:45:41.015",
-      "dateStarted": "2025-07-17 17:51:40.226",
-      "dateFinished": "2025-07-17 17:51:40.347",
+      "dateStarted": "2025-07-29 23:52:36.457",
+      "dateFinished": "2025-07-29 23:52:36.582",
       "status": "FINISHED"
     },
     {
@@ -3116,7 +3188,5 @@
   "config": {
     "isZeppelinNotebookCronEnable": false
   },
-  "info": {
-    "isRunning": true
-  }
+  "info": {}
 }
